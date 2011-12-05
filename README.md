@@ -1,4 +1,5 @@
 # Everybody Has Dot Files
+I need them as well.
 
 ## Installation
 
@@ -6,4 +7,4 @@
     rake install
 
 ## Thanks
-  Rake file from Ryan's dotfiles: <https://github.com/ryanb/dotfiles>
+Rake file from Ryan's dotfiles: <https://github.com/ryanb/dotfiles>
