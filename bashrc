@@ -1,5 +1,4 @@
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
-export MANPATH=/opt/local/share/man:$MANPATH
 
 export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Home"
 export EC2_PRIVATE_KEY="$(/bin/ls $HOME/.ec2/pk-*.pem)"
@@ -14,7 +13,7 @@ GIT_PS1_SHOWDIRTYSTATE=true
 export PS1='\h:\w$(__git_ps1 " (%s)") \u$ '
 export CLICOLOR=1
 
-source ~/.bash_alias
+if [ -s ~/.bash_aliases ] ; then source ~/.bash_aliases ; fi
 
 if [ -s ~/.rvm/scripts/rvm ] ; then source ~/.rvm/scripts/rvm ; fi
 
@@ -22,3 +21,4 @@ function svim()
 {
   (rvm system; unset GEM_PATH GEM_HOME; command mvim "$@")
 }
+
