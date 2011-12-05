@@ -1,0 +1,6 @@
+--type-set=haml=.haml
+--type-set=scss=.scss
+--type-set=log=.log
+--ignore-dir=log/
+--ignore-dir=lib-cov/
+--ignore-dir=node_modules/
