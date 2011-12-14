@@ -17,6 +17,8 @@ if [ -s ~/.bash_aliases ] ; then source ~/.bash_aliases ; fi
 
 if [ -s ~/.rvm/scripts/rvm ] ; then source ~/.rvm/scripts/rvm ; fi
 
+. ~/.nvm/nvm.sh
+
 function svim()
 {
   (rvm system; unset GEM_PATH GEM_HOME; command mvim "$@")
