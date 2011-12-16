@@ -77,11 +77,6 @@ function s:setupWrapping()
   set textwidth=72
 endfunction
 
-function s:setupMarkup()
-  call s:setupWrapping()
-  map <buffer> <Leader>p :Hammer<CR>
-endfunction
-
 " make uses real tabs
 au FileType make set noexpandtab
 
