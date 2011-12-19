@@ -15,6 +15,10 @@ if has("gui_macvim")
   imap <D-/> <Esc><plug>NERDCommenterToggle<CR>i
 endif
 
+if filereadable(expand("~/.nerdtree"))
+  source ~/.nerdtree
+endif
+
 " Don't beep
 set visualbell
 

@@ -21,6 +21,7 @@ Bundle 'tpope/vim-markdown'
 Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'skammer/vim-css-color'
 Bundle 'ervandew/supertab'
+Bundle 'tsaleh/vim-align'
 
 filetype plugin indent on
 
@@ -47,7 +48,7 @@ set smartcase
 
 " Tab completion
 set wildmode=list:longest,list:full
-set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*
+set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*,vendor/ruby/*,node_modules/*
 
 " Status bar
 set laststatus=2
@@ -81,7 +82,7 @@ endfunction
 au FileType make set noexpandtab
 
 au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru}    set ft=ruby
-au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} call s:setupMarkup()
+" au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} call s:setupMarkup()
 au BufNewFile,BufRead *.json set ft=javascript
 au BufRead,BufNewFile *.txt call s:setupWrapping()
 au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
@@ -122,4 +123,3 @@ set showcmd
 
 let g:cssColorVimDoNotMessMyUpdatetime = 1
 let g:SuperTabMappingForward="<tab>" 
-set wildignore+=*.o,*.obj,.git,vendor/ruby/**,node_modules/**
