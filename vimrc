@@ -122,4 +122,4 @@ set showcmd
 
 let g:cssColorVimDoNotMessMyUpdatetime = 1
 let g:SuperTabMappingForward="<tab>" 
-set wildignore+=*.o,*.obj,.git,vendor/ruby/**
+set wildignore+=*.o,*.obj,.git,vendor/ruby/**,node_modules/**
