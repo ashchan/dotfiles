@@ -105,6 +105,11 @@ set modelines=10
 " Default color scheme
 color desert
 
+if has("gui_running")
+  " Automatically resize splits when resizing MacVim window
+  autocmd VimResized * wincmd =
+endif
+
 " Directories for swp files
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
