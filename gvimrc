@@ -26,5 +26,5 @@ set visualbell
 set guioptions-=T
 
 set guioptions=aAce
-set guifont=Monaco:h12
+set guifont=Monaco:h13
 color ashchan
