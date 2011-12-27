@@ -17,6 +17,8 @@ if [ -s ~/.bash_aliases ] ; then source ~/.bash_aliases ; fi
 
 if [ -s ~/.rvm/scripts/rvm ] ; then source ~/.rvm/scripts/rvm ; fi
 
+if [ -s ~/.cundle/cundle.sh ] ; then source ~/.cundle/cundle.sh ; fi
+
 . ~/.nvm/nvm.sh
 
 function svim()
