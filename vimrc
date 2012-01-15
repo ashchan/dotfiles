@@ -124,5 +124,7 @@ runtime! macros/matchit.vim
 " Show (partial) command in the status line
 set showcmd
 
+nnoremap <silent> <Leader>c :CommandT<CR>
+
 let g:cssColorVimDoNotMessMyUpdatetime = 1
 let g:SuperTabMappingForward="<tab>" 
