@@ -8,7 +8,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'gmarik/snipmate.vim'
 Bundle 'honza/snipmate-snippets'
-Bundle 'wincent/command-t'
+Bundle 'wincent/Command-T'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'surround.vim'
