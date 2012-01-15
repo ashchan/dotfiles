@@ -22,6 +22,8 @@ Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'skammer/vim-css-color'
 Bundle 'ervandew/supertab'
 Bundle 'tsaleh/vim-align'
+Bundle 'jgdavey/tslime.vim'
+Bundle 'jgdavey/vim-turbux'
 
 filetype plugin indent on
 
