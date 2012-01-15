@@ -2,6 +2,9 @@ if has("gui_macvim")
   " Fullscreen takes up entire screen
   set fuoptions=maxhorz,maxvert
 
+  " Automatically resize splits when resizing MacVim window
+  autocmd VimResized * wincmd =
+
   " Command-T for CommandT
   macmenu &File.New\ Tab key=<D-T>
   map <D-t> :CommandT<CR>
