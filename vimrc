@@ -105,6 +105,7 @@ let g:syntastic_quiet_warnings=1
 set modeline
 set modelines=10
 
+set t_Co=256
 " Default color scheme
 color desert
 
