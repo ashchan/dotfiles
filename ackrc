@@ -4,3 +4,4 @@
 --ignore-dir=log/
 --ignore-dir=lib-cov/
 --ignore-dir=node_modules/
+--ignore-dir=vendor/
