@@ -126,6 +126,7 @@ runtime! macros/matchit.vim
 set showcmd
 
 nnoremap <silent> <Leader>c :CommandT<CR>
+nnoremap <silent> <Leader>f :Ack<space>
 
 let g:cssColorVimDoNotMessMyUpdatetime = 1
 let g:SuperTabMappingForward="<tab>" 
