@@ -58,6 +58,8 @@ set laststatus=2
 
 set noequalalways
 
+let mapleader = ","
+
 " NERDTree configuration
 let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
 map <Leader>n :NERDTreeToggle<CR>
