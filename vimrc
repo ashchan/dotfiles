@@ -124,4 +124,8 @@ set showcmd
 nnoremap <silent> <Leader>f :Ack<space>
 
 let g:cssColorVimDoNotMessMyUpdatetime = 1
-let g:SuperTabMappingForward="<tab>" 
+let g:SuperTabMappingForward="<tab>"
+let g:ctrlp_working_path_mode = 2
+let g:ctrlp_dotfiles = 0
+let g:ctrlp_use_caching = 0
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|\.git$\|\.bundle$\|vendor/ruby/\|bin$'
