@@ -8,7 +8,6 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'gmarik/snipmate.vim'
 Bundle 'honza/snipmate-snippets'
-Bundle 'wincent/Command-T'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'surround.vim'
@@ -25,6 +24,7 @@ Bundle 'ervandew/supertab'
 Bundle 'tsaleh/vim-align'
 Bundle 'jgdavey/tslime.vim'
 Bundle 'jgdavey/vim-turbux'
+Bundle 'kien/ctrlp.vim'
 
 filetype plugin indent on
 
@@ -63,9 +63,6 @@ let mapleader = ","
 " NERDTree configuration
 let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
 map <Leader>n :NERDTreeToggle<CR>
-
-" Command-T configuration
-let g:CommandTMaxHeight=20
 
 " CTags
 map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
@@ -121,13 +118,9 @@ let g:JSLintHighlightErrorLine = 0
 " MacVIM shift+arrow-keys behavior (required in .vimrc)
 let macvim_hig_shift_movement = 1
 
-" % to bounce from do to end etc.
-runtime! macros/matchit.vim
-
 " Show (partial) command in the status line
 set showcmd
 
-nnoremap <silent> <Leader>c :CommandT<CR>
 nnoremap <silent> <Leader>f :Ack<space>
 
 let g:cssColorVimDoNotMessMyUpdatetime = 1
