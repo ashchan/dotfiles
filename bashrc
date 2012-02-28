@@ -26,3 +26,4 @@ function svim()
   (rvm system; unset GEM_PATH GEM_HOME; command mvim "$@")
 }
 
+set -o vi
