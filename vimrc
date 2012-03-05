@@ -107,7 +107,7 @@ set modelines=10
 
 set t_Co=256
 " Default color scheme
-color ashchan-white
+color ashchan
 
 " Directories for swp files
 set backupdir=~/.vim/backup
