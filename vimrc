@@ -69,6 +69,9 @@ map <Leader>n :NERDTreeToggle<CR>
 map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
 map <C-\> :tnext<CR>
 
+" OpenURL for rails.vim
+:command -bar -nargs=1 OpenURL :!open <args>
+
 " Remember last location in file
 if has("autocmd")
   au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
