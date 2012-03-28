@@ -7,6 +7,7 @@ export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.5.2.3/jars"
 export EC2_AMITOOL_HOME="/usr/local/Cellar/ec2-ami-tools/1.3-45758/jars"
 export AWS_ELB_HOME="/usr/local/Cellar/elb-tools/1.0.15.1/jars"
 export EC2_URL=https://ec2.ap-northeast-1.amazonaws.com
+export MITSCHEME_LIBRARY_PATH="/Applications/MIT\:GNU\ Scheme.app/Contents/Resources/"
 
 source /usr/local/etc/bash_completion.d/git-completion.bash
 GIT_PS1_SHOWDIRTYSTATE=true
