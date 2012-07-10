@@ -22,9 +22,4 @@ if [ -s ~/.cundle/cundle.sh ] ; then source ~/.cundle/cundle.sh ; fi
 
 . ~/.nvm/nvm.sh
 
-function svim()
-{
-  (rvm system; unset GEM_PATH GEM_HOME; command mvim "$@")
-}
-
 set -o vi
