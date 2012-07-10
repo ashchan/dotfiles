@@ -11,7 +11,7 @@ export MITSCHEME_LIBRARY_PATH="/Applications/MIT\:GNU\ Scheme.app/Contents/Resou
 
 source /usr/local/etc/bash_completion.d/git-completion.bash
 GIT_PS1_SHOWDIRTYSTATE=true
-export PS1='\h:\w$(__git_ps1 " (%s)") \u$ '
+export PS1='\w$(__git_ps1 " (%s)")$ '
 export CLICOLOR=1
 
 if [ -s ~/.bash_aliases ] ; then source ~/.bash_aliases ; fi
