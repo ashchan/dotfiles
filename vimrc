@@ -1,5 +1,6 @@
 set nocompatible
 set clipboard=unnamed
+set timeout timeoutlen=1000 ttimeoutlen=100
 
 filetype off
 set rtp+=~/.vim/bundle/vundle
