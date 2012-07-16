@@ -23,3 +23,5 @@ if [ -s ~/.cundle/cundle.sh ] ; then source ~/.cundle/cundle.sh ; fi
 . ~/.nvm/nvm.sh
 
 set -o vi
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

@@ -3,8 +3,6 @@ I need them as well.
 
 ## Installation
 
-    cd dotfiles
-    rake install
+    gem install dotify
+    git clone URL .dotify
 
-## Thanks
-Rake file from Ryan's dotfiles: <https://github.com/ryanb/dotfiles>
