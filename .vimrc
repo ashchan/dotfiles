@@ -27,6 +27,8 @@ Bundle 'ervandew/supertab'
 Bundle 'tsaleh/vim-align'
 Bundle 'jgdavey/tslime.vim'
 Bundle 'jgdavey/vim-turbux'
+Bundle 'tpope/vim-fugitive'
+Bundle 'markschabacker/cocoa.vim'
 
 filetype plugin indent on
 
