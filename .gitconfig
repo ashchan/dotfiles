@@ -22,5 +22,6 @@
   default = matching
 [core]
   excludesfile = /Users/james/.gitignore
+  editor = vim
 [github]
   user = ashchan
