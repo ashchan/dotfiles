@@ -11,6 +11,7 @@ export MITSCHEME_LIBRARY_PATH="/Applications/MIT\:GNU\ Scheme.app/Contents/Resou
 export GOROOT="/usr/local/Cellar/go/1.0.2"
 
 source /usr/local/etc/bash_completion.d/git-completion.bash
+source /usr/local/etc/bash_completion.d/git-prompt.sh
 GIT_PS1_SHOWDIRTYSTATE=true
 export PS1='\w$(__git_ps1 " (%s)")$ '
 export CLICOLOR=1
