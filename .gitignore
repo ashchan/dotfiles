@@ -1,3 +1,5 @@
 .DS_Store
 *.swp
 .ec2
+bin/*
+vendor/ruby/*
