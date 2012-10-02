@@ -77,6 +77,7 @@ au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
 au BufRead,BufNewFile *.scss set ft=scss
 au BufRead,BufNewFile,BufReadPost *.go set ft=go
 au FileType go set noexpandtab tabstop=4 softtabstop=4 shiftwidth=4
+au FileType objc set tabstop=4 softtabstop=4 shiftwidth=4
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
