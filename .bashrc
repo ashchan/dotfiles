@@ -15,6 +15,7 @@ source /usr/local/etc/bash_completion.d/git-prompt.sh
 GIT_PS1_SHOWDIRTYSTATE=true
 export PS1='\w$(__git_ps1 " (%s)")$ '
 export CLICOLOR=1
+export EDITOR=vim
 
 if [ -s ~/.bash_aliases ] ; then source ~/.bash_aliases ; fi
 
