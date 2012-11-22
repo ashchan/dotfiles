@@ -1,0 +1,40 @@
+config defaultToCurrentScreen          true
+config windowHintsShowIcons            true
+config windowHintsIgnoreHiddenWindows  false
+config windowHintsSpread               true
+config nudgePercentOf                  screenSize
+config resizePercentOf                 screenSize
+config secondsBeforeRepeat             0.3
+config windowHintsDuration             2.5
+
+# Resize Bindings
+bind right:cmd;shift       resize +5%  +0
+bind left:cmd;shift        resize -5%  +0
+bind up:cmd;shift          resize +0   -5%
+bind down:cmd;shift        resize +0   +5%
+bind right:alt       resize -5%  +0 bottom-right
+bind left:alt        resize +5%  +0 bottom-right
+bind up:alt          resize +0   +5% bottom-right
+bind down:alt        resize +0   -5% bottom-right
+
+# Push Bindings
+bind right:cmd  push right bar-resize:screenSizeX/2
+bind left:cmd   push left  bar-resize:screenSizeX/2
+bind up:cmd     push up    bar-resize:screenSizeY/2
+bind down:cmd   push down  bar-resize:screenSizeY/2
+
+# Nudge Bindings
+bind right:shift;alt nudge +5% +0
+bind left:shift;alt  nudge -5% +0
+bind up:shift;alt    nudge +0   -5%
+bind down:shift;alt  nudge +0   +5%
+
+# Throw Bindings
+bind m:shift;cmd        throw 0 resize
+
+# Focus Bindings
+# bind up:cmd;alt   focus behind
+# bind down:cmd;alt focus behind
+
+# Window Hints
+bind esc:cmd hint
