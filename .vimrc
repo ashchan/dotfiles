@@ -70,7 +70,7 @@ endfunction
 au FileType make set noexpandtab
 
 au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru}    set ft=ruby
-" au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} call s:setupMarkup()
+au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} set ft=markdown " call s:setupMarkup()
 au BufNewFile,BufRead *.json set ft=javascript
 au BufRead,BufNewFile *.txt call s:setupWrapping()
 au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
@@ -116,10 +116,7 @@ Bundle 'surround.vim'
 Bundle 'gmarik/snipmate.vim'
 Bundle 'honza/snipmate-snippets'
 Bundle 'pangloss/vim-javascript'
-"Bundle 'tpope/vim-haml'
-"Bundle 'kchmck/vim-coffee-script'
-"Bundle 'tpope/vim-markdown'
-Bundle 'hallison/vim-markdown'
+Bundle 'plasticboy/vim-markdown'
 Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'ap/vim-css-color'
 Bundle 'ervandew/supertab'
