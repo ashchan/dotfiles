@@ -25,4 +25,5 @@ if [ -s ~/.cundle/cundle.sh ] ; then source ~/.cundle/cundle.sh ; fi
 
 set -o vi
 
+export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
