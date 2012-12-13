@@ -19,12 +19,10 @@ export EDITOR=vim
 
 if [ -s ~/.bash_aliases ] ; then source ~/.bash_aliases ; fi
 
-if [ -s ~/.rvm/scripts/rvm ] ; then source ~/.rvm/scripts/rvm ; fi
-
 if [ -s ~/.cundle/cundle.sh ] ; then source ~/.cundle/cundle.sh ; fi
 
 . ~/.nvm/nvm.sh
 
 set -o vi
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+eval "$(rbenv init -)"
