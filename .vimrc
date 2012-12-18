@@ -90,9 +90,6 @@ let g:syntastic_quiet_warnings=1
 set modeline
 set modelines=10
 
-set t_Co=256
-color default
-
 " Show (partial) command in the status line
 set showcmd
 
@@ -125,6 +122,11 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'markschabacker/cocoa.vim'
 Bundle 'jnwhiteh/vim-golang.git'
 Bundle 'vim-scripts/trailing-whitespace'
+Bundle 'flazz/vim-colorschemes'
+
+set t_Co=256
+color vexorian
+
 
 nnoremap <silent> <Leader>f :Ack<space>
 
