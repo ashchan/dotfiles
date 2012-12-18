@@ -91,7 +91,7 @@ set modeline
 set modelines=10
 
 set t_Co=256
-color ashwhite
+color default
 
 " Show (partial) command in the status line
 set showcmd
@@ -103,8 +103,6 @@ set directory=~/.vim/backup
 " Turn off jslint errors by default
 let g:JSLintHighlightErrorLine = 0
 
-" MacVIM shift+arrow-keys behavior (required in .vimrc)
-let macvim_hig_shift_movement = 1
 
 Bundle 'kien/ctrlp.vim'
 Bundle 'ack.vim'
@@ -126,6 +124,7 @@ Bundle 'jgdavey/vim-turbux'
 Bundle 'tpope/vim-fugitive'
 Bundle 'markschabacker/cocoa.vim'
 Bundle 'jnwhiteh/vim-golang.git'
+Bundle 'vim-scripts/trailing-whitespace'
 
 nnoremap <silent> <Leader>f :Ack<space>
 
