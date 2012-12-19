@@ -21,9 +21,10 @@ if [ -s ~/.bash_aliases ] ; then source ~/.bash_aliases ; fi
 
 if [ -s ~/.cundle/cundle.sh ] ; then source ~/.cundle/cundle.sh ; fi
 
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
 . ~/.nvm/nvm.sh
 
 set -o vi
 
-export PATH="$HOME/.rbenv/bin:$PATH"
-#eval "$(rbenv init -)"
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
