@@ -51,6 +51,9 @@ map <Leader>n :NERDTreeToggle<CR>
 map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
 map <C-\> :tnext<CR>
 
+" Marked
+:map <leader>m :!open -a Marked.app '%:p'<CR><CR>
+
 " OpenURL for rails.vim
 :command -bar -nargs=1 OpenURL :!open <args>
 
@@ -77,6 +80,7 @@ au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
 au BufRead,BufNewFile *.scss set ft=scss
 au BufRead,BufNewFile,BufReadPost *.go set ft=go
 au FileType go set noexpandtab tabstop=4 softtabstop=4 shiftwidth=4
+autocmd FileType go autocmd BufWritePre <buffer> Fmt
 au FileType objc set tabstop=4 softtabstop=4 shiftwidth=4
 
 " allow backspacing over everything in insert mode
