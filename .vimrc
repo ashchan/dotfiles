@@ -133,6 +133,7 @@ color vexorian
 
 
 nnoremap <silent> <Leader>f :Ack<space>
+let g:ackprg = 'ag --nogroup --nocolor --column'
 
 let g:cssColorVimDoNotMessMyUpdatetime = 1
 let g:SuperTabMappingForward="<tab>"
