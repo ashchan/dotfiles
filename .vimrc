@@ -51,6 +51,9 @@ map <Leader>n :NERDTreeToggle<CR>
 map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
 map <C-\> :tnext<CR>
 
+" Ack
+nnoremap <silent> <Leader>f :Ack<space>
+
 " Marked
 :map <leader>m :!open -a Marked.app '%:p'<CR><CR>
 
@@ -130,7 +133,6 @@ Bundle 'flazz/vim-colorschemes'
 
 set t_Co=256
 color vexorian
-
 
 nnoremap <silent> <Leader>f :Ack<space>
 let g:ackprg = 'ag --nogroup --nocolor --column'
