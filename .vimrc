@@ -130,6 +130,7 @@ Bundle 'markschabacker/cocoa.vim'
 Bundle 'jnwhiteh/vim-golang.git'
 Bundle 'vim-scripts/trailing-whitespace'
 Bundle 'flazz/vim-colorschemes'
+Bundle 'maksimr/vim-jsbeautify'
 
 set t_Co=256
 color vexorian
