@@ -77,7 +77,8 @@ au FileType make set noexpandtab
 
 au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru}    set ft=ruby
 au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} set ft=markdown " call s:setupMarkup()
-au BufNewFile,BufRead *.json set ft=javascript
+au BufNewFile,BufRead *.{json,js} set ft=javascript
+au FileType javascript set tabstop=2 softtabstop=2 shiftwidth=2
 au BufRead,BufNewFile *.txt call s:setupWrapping()
 au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
 au BufRead,BufNewFile *.scss set ft=scss
