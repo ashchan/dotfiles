@@ -30,12 +30,11 @@ set noequalalways
 
 let mapleader = ","
 
+" vunble
 filetype off
 set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
-
 Bundle 'gmarik/vundle'
-
 filetype on
 filetype plugin indent on
 
@@ -72,9 +71,7 @@ function s:setupWrapping()
   set textwidth=72
 endfunction
 
-" make uses real tabs
 au FileType make set noexpandtab
-
 au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru}    set ft=ruby
 au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} set ft=markdown " call s:setupMarkup()
 au BufNewFile,BufRead *.{json,js} set ft=javascript
@@ -106,37 +103,11 @@ set showcmd
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
 
+set t_Co=256
+set background=dark
+
 " Turn off jslint errors by default
 let g:JSLintHighlightErrorLine = 0
-
-
-Bundle 'kien/ctrlp.vim'
-Bundle 'ack.vim'
-Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'tpope/vim-rails.git'
-Bundle 'taq/vim-rspec.git'
-Bundle 'surround.vim'
-Bundle 'gmarik/snipmate.vim'
-Bundle 'honza/snipmate-snippets'
-Bundle 'pangloss/vim-javascript'
-Bundle 'plasticboy/vim-markdown'
-Bundle 'cakebaker/scss-syntax.vim'
-Bundle 'ap/vim-css-color'
-Bundle 'ervandew/supertab'
-Bundle 'tsaleh/vim-align'
-Bundle 'jgdavey/tslime.vim'
-Bundle 'jgdavey/vim-turbux'
-Bundle 'tpope/vim-fugitive'
-Bundle 'markschabacker/cocoa.vim'
-Bundle 'jnwhiteh/vim-golang.git'
-Bundle 'vim-scripts/trailing-whitespace'
-Bundle 'flazz/vim-colorschemes'
-Bundle 'maksimr/vim-jsbeautify'
-Bundle 'groenewege/vim-less'
-
-set t_Co=256
-color vexorian
 
 nnoremap <silent> <Leader>f :Ack<space>
 let g:ackprg = 'ag --nogroup --nocolor --column'
@@ -147,3 +118,30 @@ let g:ctrlp_working_path_mode = 2
 let g:ctrlp_dotfiles = 0
 let g:ctrlp_use_caching = 1
 let g:ctrlp_custom_ignore = 'vendor/ruby/\|bin/\|node_modules/\|tmp/'
+
+
+Bundle 'kien/ctrlp.vim'
+Bundle 'ack.vim'
+Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'ervandew/supertab'
+Bundle 'tsaleh/vim-align'
+Bundle 'vim-scripts/trailing-whitespace'
+Bundle 'surround.vim'
+Bundle 'gmarik/snipmate.vim'
+Bundle 'honza/snipmate-snippets'
+Bundle 'tpope/vim-rails.git'
+Bundle 'taq/vim-rspec.git'
+Bundle 'pangloss/vim-javascript'
+Bundle 'maksimr/vim-jsbeautify'
+Bundle 'plasticboy/vim-markdown'
+Bundle 'jgdavey/tslime.vim'
+Bundle 'jgdavey/vim-turbux'
+Bundle 'tpope/vim-fugitive'
+Bundle 'jnwhiteh/vim-golang.git'
+Bundle 'ap/vim-css-color'
+Bundle 'cakebaker/scss-syntax.vim'
+Bundle 'groenewege/vim-less'
+Bundle 'altercation/vim-colors-solarized'
+
+color solarized
