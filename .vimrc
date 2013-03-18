@@ -80,6 +80,7 @@ au BufRead,BufNewFile *.txt call s:setupWrapping()
 au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
 au BufRead,BufNewFile *.scss set ft=scss
 au BufRead,BufNewFile *.less set ft=less
+au BufRead,BufNewFile *.jade set ft=jade
 au BufRead,BufNewFile,BufReadPost *.go set ft=go
 au FileType go set noexpandtab tabstop=4 softtabstop=4 shiftwidth=4
 autocmd FileType go autocmd BufWritePre <buffer> Fmt
