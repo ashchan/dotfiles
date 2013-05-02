@@ -19,7 +19,7 @@
   changed = green
   untracked = cyan
 [push]
-  default = matching
+  default = simple
 [core]
   excludesfile = /Users/james/.gitignore
   editor = vim
