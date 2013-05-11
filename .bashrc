@@ -20,8 +20,6 @@ export EDITOR=vim
 
 if [ -s ~/.bash_aliases ] ; then source ~/.bash_aliases ; fi
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
 . ~/.nvm/nvm.sh
 
 set -o vi
