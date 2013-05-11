@@ -1,16 +1,17 @@
 ZSH=$HOME/.oh-my-zsh
 
-ZSH_THEME="robbyrussell"
+ZSH_THEME="flazz"
 
 COMPLETION_WAITING_DOTS="true"
 
-plugins=(git rails ruby)
+plugins=(vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
 . ~/.nvm/nvm.sh
 
 set -o vi
+bindkey "^R" history-incremental-search-backward
 export EDITOR=vim
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
