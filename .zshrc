@@ -14,7 +14,7 @@ set -o vi
 bindkey "^R" history-incremental-search-backward
 export EDITOR=vim
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PATH=/usr/local/bin:/usr/local/sbin:$PATH:$HOME/.rvm/bin
 
 export JAVA_HOME="$(/usr/libexec/java_home)"
 export EC2_PRIVATE_KEY="$(/bin/ls "$HOME"/.ec2/pk-*.pem | /usr/bin/head -1)"
