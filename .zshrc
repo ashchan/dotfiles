@@ -1,17 +1,8 @@
-ZSH=$HOME/.oh-my-zsh
-
-ZSH_THEME="flazz"
-
-COMPLETION_WAITING_DOTS="true"
-
-plugins=(vi-mode)
-
-source $ZSH/oh-my-zsh.sh
-
 . ~/.nvm/nvm.sh
 
 set -o vi
 bindkey "^R" history-incremental-search-backward
+export CLICOLOR=1
 export EDITOR=vim
 
 PATH=/usr/local/bin:/usr/local/sbin:$PATH:$HOME/.rvm/bin
@@ -25,3 +16,11 @@ export AWS_ELB_HOME="/usr/local/Library/LinkedKegs/elb-tools/jars"
 export EC2_URL=https://ec2.ap-northeast-1.amazonaws.com
 
 export GOROOT="/usr/local/Cellar/go/1.0.3"
+
+setopt prompt_subst
+autoload colors zsh/terminfo
+colors
+
+source /usr/local/etc/bash_completion.d/git-prompt.sh
+PS1='%n@%m %c$(__git_ps1 " (%s)")\$ '
+
