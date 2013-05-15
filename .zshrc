@@ -22,5 +22,6 @@ autoload colors zsh/terminfo
 colors
 
 source /usr/local/etc/bash_completion.d/git-prompt.sh
-PS1='%n@%m %c$(__git_ps1 " (%s)")\$ '
+GIT_PS1_SHOWDIRTYSTATE=true
+PS1='%n@%m %{$fg[yellow]%}%~%{$reset_color%}%{$fg[red]%}$(__git_ps1 " (%s)")%{$reset_color%}\$ '
 
