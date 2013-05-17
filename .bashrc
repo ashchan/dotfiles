@@ -1,4 +1,3 @@
-export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
 export JAVA_HOME="$(/usr/libexec/java_home)"
 export EC2_PRIVATE_KEY="$(/bin/ls "$HOME"/.ec2/pk-*.pem | /usr/bin/head -1)"
@@ -8,7 +7,8 @@ export EC2_AMITOOL_HOME="/usr/local/Library/LinkedKegs/ec2-ami-tools/jars"
 export AWS_ELB_HOME="/usr/local/Library/LinkedKegs/elb-tools/jars"
 export EC2_URL=https://ec2.ap-northeast-1.amazonaws.com
 
-export GOROOT="/usr/local/Cellar/go/1.0.3"
+export GOPATH=$HOME/Projects/go
+export PATH="/usr/local/bin:/usr/local/sbin:$GOPATH/bin:$PATH"
 
 source /usr/local/etc/bash_completion.d/git-completion.bash
 source /usr/local/etc/bash_completion.d/git-prompt.sh
