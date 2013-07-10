@@ -147,5 +147,6 @@ Bundle 'ap/vim-css-color'
 Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'groenewege/vim-less'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'bling/vim-airline'
 
 color solarized
