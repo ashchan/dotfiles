@@ -130,7 +130,8 @@ Bundle 'ack.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'ervandew/supertab'
-Bundle 'tsaleh/vim-align'
+" Bundle 'tsaleh/vim-align'
+Bundle 'junegunn/vim-easy-align'
 Bundle 'vim-scripts/trailing-whitespace'
 Bundle 'surround.vim'
 Bundle 'tpope/vim-rails.git'
@@ -148,5 +149,7 @@ Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'groenewege/vim-less'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'bling/vim-airline'
+
+vnoremap <silent> <Enter> :EasyAlign<cr>
 
 color solarized
