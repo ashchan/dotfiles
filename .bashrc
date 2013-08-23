@@ -9,6 +9,7 @@ export EC2_URL=https://ec2.ap-northeast-1.amazonaws.com
 
 export GOPATH=$HOME/Projects/go
 export PATH="/usr/local/bin:/usr/local/sbin:$GOPATH/bin:$PATH"
+PATH=$GEM_HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH:$GOPATH/bin
 
 source /usr/local/etc/bash_completion.d/git-completion.bash
 source /usr/local/etc/bash_completion.d/git-prompt.sh
@@ -23,5 +24,3 @@ if [ -s ~/.bash_aliases ] ; then source ~/.bash_aliases ; fi
 . ~/.nvm/nvm.sh
 
 set -o vi
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

@@ -14,7 +14,7 @@ export AWS_ELB_HOME="/usr/local/Library/LinkedKegs/elb-tools/jars"
 export EC2_URL=https://ec2.ap-northeast-1.amazonaws.com
 
 export GOPATH=$HOME/Projects/go
-PATH=/usr/local/bin:/usr/local/sbin:$GOPATH/bin:$PATH:$HOME/.rvm/bin
+PATH=$GEM_HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH:$GOPATH/bin
 
 setopt prompt_subst
 autoload colors zsh/terminfo
