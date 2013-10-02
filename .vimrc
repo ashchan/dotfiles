@@ -43,7 +43,7 @@ set ruler
 syntax on
 
 " NERDTree configuration
-let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
+let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$', 'tags']
 map <Leader>n :NERDTreeToggle<CR>
 
 " CTags

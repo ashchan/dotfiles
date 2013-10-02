@@ -24,3 +24,5 @@ if [ -s ~/.bash_aliases ] ; then source ~/.bash_aliases ; fi
 . ~/.nvm/nvm.sh
 
 set -o vi
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

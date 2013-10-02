@@ -24,3 +24,5 @@ source /usr/local/etc/bash_completion.d/git-prompt.sh
 GIT_PS1_SHOWDIRTYSTATE=true
 PS1='%n@%m %{$fg[yellow]%}%~%{$reset_color%}%{$fg[red]%}$(__git_ps1 " (%s)")%{$reset_color%}\$ '
 
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
