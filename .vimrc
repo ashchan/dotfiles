@@ -42,22 +42,12 @@ set number
 set ruler
 syntax on
 
-" NERDTree configuration
-let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$', 'tags']
-map <Leader>n :NERDTreeToggle<CR>
-
 " CTags
 map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
 map <C-\> :tnext<CR>
 
-" Ack
-nnoremap <silent> <Leader>f :Ack<space>
-
 " Marked
 :map <leader>m :!open -a Marked.app '%:p'<CR><CR>
-
-" OpenURL for rails.vim
-:command -bar -nargs=1 OpenURL :!open <args>
 
 " Remember last location in file
 if has("autocmd")
@@ -72,7 +62,7 @@ function s:setupWrapping()
 endfunction
 
 au FileType make set noexpandtab
-au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru}    set ft=ruby
+au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Capfile,config.ru}    set ft=ruby
 au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} set ft=markdown " call s:setupMarkup()
 au BufNewFile,BufRead *.{json,js} set ft=javascript
 au FileType javascript set tabstop=2 softtabstop=2 shiftwidth=2
@@ -92,10 +82,6 @@ autocmd Filetype gitcommit setlocal spell textwidth=72
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
-" Enable syntastic syntax checking
-let g:syntastic_enable_signs=1
-let g:syntastic_quiet_warnings=1
-
 " Use modeline overrides
 set modeline
 set modelines=10
@@ -114,27 +100,40 @@ set background=dark
 " Turn off jslint errors by default
 let g:JSLintHighlightErrorLine = 0
 
-nnoremap <silent> <Leader>f :Ack<space>
-let g:ackprg = 'ag --nogroup --nocolor --column'
-
-let g:cssColorVimDoNotMessMyUpdatetime = 1
-let g:SuperTabMappingForward="<tab>"
+Bundle 'kien/ctrlp.vim'
 let g:ctrlp_working_path_mode = 2
 let g:ctrlp_dotfiles = 0
 let g:ctrlp_use_caching = 1
 let g:ctrlp_custom_ignore = 'vendor/ruby/\|bin/\|node_modules/\|tmp/'
 
-
-Bundle 'kien/ctrlp.vim'
 Bundle 'ack.vim'
+nnoremap <silent> <Leader>f :Ack<space>
+let g:ackprg = 'ag --nogroup --nocolor --column'
+
 Bundle 'scrooloose/nerdtree'
+" NERDTree configuration
+let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$', 'tags']
+map <Leader>n :NERDTreeToggle<CR>
+
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'ervandew/supertab'
-" Bundle 'tsaleh/vim-align'
+let g:SuperTabMappingForward="<tab>"
+
 Bundle 'junegunn/vim-easy-align'
+vnoremap <silent> <Enter> :EasyAlign<cr>
+
+Bundle 'scrooloose/syntastic'
+" Enable syntastic syntax checking
+let g:syntastic_enable_signs=1
+let g:syntastic_quiet_warnings=1
+
 Bundle 'vim-scripts/trailing-whitespace'
 Bundle 'surround.vim'
+
 Bundle 'tpope/vim-rails.git'
+" OpenURL for rails.vim
+:command -bar -nargs=1 OpenURL :!open <args>
+
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'pangloss/vim-javascript'
 Bundle 'maksimr/vim-jsbeautify'
@@ -144,13 +143,15 @@ Bundle 'jgdavey/vim-turbux'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-dispatch'
 Bundle 'jnwhiteh/vim-golang.git'
+
 Bundle 'ap/vim-css-color'
+let g:cssColorVimDoNotMessMyUpdatetime = 1
+
 Bundle 'cakebaker/scss-syntax.vim'
 " Bundle 'groenewege/vim-less'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'bling/vim-airline'
-
-" EasyAlign
-vnoremap <silent> <Enter> :EasyAlign<cr>
+Bundle 'majutsushi/tagbar'
+Bundle 'terryma/vim-multiple-cursors'
 
 color solarized
