@@ -97,9 +97,6 @@ set nobackup
 set t_Co=256
 set background=dark
 
-" Turn off jslint errors by default
-let g:JSLintHighlightErrorLine = 0
-
 Bundle 'kien/ctrlp.vim'
 let g:ctrlp_working_path_mode = 2
 let g:ctrlp_dotfiles = 0
@@ -123,9 +120,8 @@ Bundle 'junegunn/vim-easy-align'
 vnoremap <silent> <Enter> :EasyAlign<cr>
 
 Bundle 'scrooloose/syntastic'
-" Enable syntastic syntax checking
 let g:syntastic_enable_signs=1
-let g:syntastic_quiet_warnings=1
+let g:syntastic_go_checkers=['golint']
 
 Bundle 'vim-scripts/trailing-whitespace'
 Bundle 'surround.vim'
@@ -153,5 +149,6 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'bling/vim-airline'
 Bundle 'majutsushi/tagbar'
 Bundle 'terryma/vim-multiple-cursors'
+Bundle 'terryma/vim-expand-region'
 
 color solarized
