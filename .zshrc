@@ -13,7 +13,7 @@ export EC2_AMITOOL_HOME="/usr/local/Library/LinkedKegs/ec2-ami-tools/jars"
 export AWS_ELB_HOME="/usr/local/Library/LinkedKegs/elb-tools/jars"
 export EC2_URL=https://ec2.ap-northeast-1.amazonaws.com
 
-export GOPATH=$HOME/Projects/go
+export GOPATH=$HOME/.go
 PATH=$GEM_HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH:$GOPATH/bin
 
 setopt prompt_subst
