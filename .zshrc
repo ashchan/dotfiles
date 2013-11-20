@@ -14,7 +14,7 @@ export AWS_ELB_HOME="/usr/local/Library/LinkedKegs/elb-tools/jars"
 export EC2_URL=https://ec2.ap-northeast-1.amazonaws.com
 
 export GOPATH=$HOME/.go
-PATH=$GEM_HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH:$GOPATH/bin
+PATH=/usr/local/bin:/usr/local/sbin:/sbin/:$PATH:$GOPATH/bin
 
 setopt prompt_subst
 autoload colors zsh/terminfo
@@ -24,5 +24,5 @@ source /usr/local/etc/bash_completion.d/git-prompt.sh
 GIT_PS1_SHOWDIRTYSTATE=true
 PS1='%n@%m %{$fg[yellow]%}%~%{$reset_color%}%{$fg[red]%}$(__git_ps1 " (%s)")%{$reset_color%}\$ '
 
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+source /usr/local/opt/chruby/share/chruby/chruby.sh
+source /usr/local/opt/chruby/share/chruby/auto.sh
