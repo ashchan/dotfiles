@@ -12,6 +12,7 @@
 --ignore-dir=log/
 --ignore-dir=lib-cov/
 --ignore-dir=node_modules/
+--ignore-dir=bower_components/
 --ignore-dir=vendor/
 --ignore-dir=tmp
 --ignore-dir=public/system
