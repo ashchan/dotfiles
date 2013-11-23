@@ -42,6 +42,10 @@ set number
 set ruler
 syntax on
 
+if has("mouse")
+  set mouse=a
+endif
+
 " CTags
 map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
 map <C-\> :tnext<CR>
@@ -133,9 +137,12 @@ Bundle 'tpope/vim-rails.git'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'pangloss/vim-javascript'
 Bundle 'maksimr/vim-jsbeautify'
-" Bundle 'digitaltoad/vim-jade'
+Bundle 'digitaltoad/vim-jade'
 Bundle 'plasticboy/vim-markdown'
+
 Bundle 'jgdavey/vim-turbux'
+let g:turbux_command_prefix = 'bundle exec'
+
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-dispatch'
 Bundle 'jnwhiteh/vim-golang.git'
@@ -144,7 +151,7 @@ Bundle 'ap/vim-css-color'
 let g:cssColorVimDoNotMessMyUpdatetime = 1
 
 Bundle 'cakebaker/scss-syntax.vim'
-" Bundle 'groenewege/vim-less'
+Bundle 'groenewege/vim-less'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'bling/vim-airline'
 Bundle 'majutsushi/tagbar'
