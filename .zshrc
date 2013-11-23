@@ -1,5 +1,3 @@
-. ~/.nvm/nvm.sh
-
 set -o vi
 bindkey "^R" history-incremental-search-backward
 export CLICOLOR=1

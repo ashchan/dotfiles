@@ -21,6 +21,4 @@ export EDITOR=vim
 
 if [ -s ~/.bash_aliases ] ; then source ~/.bash_aliases ; fi
 
-. ~/.nvm/nvm.sh
-
 set -o vi
