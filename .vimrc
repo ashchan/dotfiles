@@ -44,6 +44,10 @@ syntax on
 
 if has("mouse")
   set mouse=a
+  if &term =~ '^screen'
+    " tmux knows the extended mouse mode
+    set ttymouse=xterm2
+  endif
 endif
 
 " CTags
