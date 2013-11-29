@@ -1,0 +1,10 @@
+log/
+lib-cov/
+node_modules/
+bower_components/
+vendor/
+tmp
+public/system
+.sass-cache
+*.tags*
+*.swp

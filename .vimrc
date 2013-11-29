@@ -111,9 +111,9 @@ let g:ctrlp_dotfiles = 0
 let g:ctrlp_use_caching = 1
 let g:ctrlp_custom_ignore = 'vendor/ruby/\|bin/\|node_modules/\|tmp/'
 
-Bundle 'ack.vim'
-nnoremap <silent> <Leader>f :Ack<space>
-let g:ackprg = 'ag --nogroup --nocolor --column'
+Bundle 'ag.vim'
+nnoremap <silent> <Leader>f :Ag<space>
+let g:agprg = 'ag --nogroup --nocolor --column'
 
 Bundle 'scrooloose/nerdtree'
 " NERDTree configuration
@@ -149,7 +149,8 @@ let g:turbux_command_prefix = 'bundle exec'
 
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-dispatch'
-Bundle 'jnwhiteh/vim-golang.git'
+Bundle 'jnwhiteh/vim-golang'
+Bundle 'Blackrush/vim-gocode'
 
 Bundle 'ap/vim-css-color'
 let g:cssColorVimDoNotMessMyUpdatetime = 1
