@@ -118,7 +118,7 @@ if executable('ag')
   let g:ctrlp_use_caching = 0
   set grepprg=ag\ --nogroup\ --nocolor
 endif
-nnoremap F :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
+nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
 Bundle 'scrooloose/nerdtree'
 " NERDTree configuration
