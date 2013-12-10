@@ -108,8 +108,8 @@ set background=dark
 Bundle 'kien/ctrlp.vim'
 let g:ctrlp_working_path_mode = 2
 let g:ctrlp_dotfiles = 0
-let g:ctrlp_use_caching = 1
-let g:ctrlp_custom_ignore = 'vendor/ruby/\|bin/\|node_modules/\|tmp/'
+let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+let g:ctrlp_use_caching = 0
 
 Bundle 'ag.vim'
 nnoremap <silent> <Leader>f :Ag<space>
