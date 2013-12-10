@@ -105,15 +105,20 @@ set nobackup
 set t_Co=256
 set background=dark
 
-Bundle 'kien/ctrlp.vim'
-let g:ctrlp_working_path_mode = 2
-let g:ctrlp_dotfiles = 0
-let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-let g:ctrlp_use_caching = 0
-
 Bundle 'ag.vim'
 nnoremap <silent> <Leader>f :Ag<space>
 let g:agprg = 'ag --nogroup --nocolor --column'
+
+Bundle 'kien/ctrlp.vim'
+let g:ctrlp_working_path_mode = 2
+let g:ctrlp_dotfiles = 0
+
+if executable('ag')
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+  let g:ctrlp_use_caching = 0
+  set grepprg=ag\ --nogroup\ --nocolor
+endif
+nnoremap F :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
 Bundle 'scrooloose/nerdtree'
 " NERDTree configuration
