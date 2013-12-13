@@ -22,5 +22,8 @@ source /usr/local/etc/bash_completion.d/git-prompt.sh
 GIT_PS1_SHOWDIRTYSTATE=true
 PS1='%n@%m %{$fg[yellow]%}%~%{$reset_color%}%{$fg[red]%}$(__git_ps1 " (%s)")%{$reset_color%}\$ '
 
+precmd () {print -Pn "\e]2; %~/ \a"}
+preexec () {print -Pn "\e]2; %~/ \a"}
+
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
