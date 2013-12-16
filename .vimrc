@@ -163,7 +163,7 @@ let g:cssColorVimDoNotMessMyUpdatetime = 1
 Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'groenewege/vim-less'
 Bundle 'altercation/vim-colors-solarized'
-Bundle 'bling/vim-airline'
+" Bundle 'bling/vim-airline'
 Bundle 'majutsushi/tagbar'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'terryma/vim-expand-region'
