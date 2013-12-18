@@ -27,3 +27,4 @@ preexec () {print -Pn "\e]2; %~/ \a"}
 
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
+eval "$(direnv hook $0)"
