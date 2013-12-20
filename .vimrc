@@ -19,7 +19,6 @@ set incsearch
 set ignorecase
 set smartcase
 
-" Tab completion
 set wildmode=list:longest,list:full
 set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*,vendor/ruby/*,node_modules/*
 
@@ -126,8 +125,8 @@ let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$', 'tags']
 map <Leader>n :NERDTreeToggle<CR>
 
 Bundle 'scrooloose/nerdcommenter'
-Bundle 'ervandew/supertab'
-let g:SuperTabMappingForward="<tab>"
+" Bundle 'ervandew/supertab'
+" let g:SuperTabMappingForward="<tab>"
 
 Bundle 'junegunn/vim-easy-align'
 vnoremap <silent> <Enter> :EasyAlign<cr>
@@ -167,5 +166,7 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'majutsushi/tagbar'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'terryma/vim-expand-region'
+
+Bundle 'Valloric/YouCompleteMe'
 
 color solarized
