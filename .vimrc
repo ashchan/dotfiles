@@ -172,4 +172,8 @@ Bundle 'Valloric/YouCompleteMe'
 let g:ycm_collect_identifiers_from_tags_files = 1
 let g:ycm_seed_identifiers_with_syntax = 1
 
+Bundle 'Keithbsmiley/investigate.vim'
+nnoremap <leader>k :call investigate#Investigate()<CR>
+let g:investigate_use_dash = 1
+
 color solarized
