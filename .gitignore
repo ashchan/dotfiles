@@ -4,3 +4,6 @@
 bin/*
 vendor/ruby/*
 .envrc
+.env
+Procfile.local
+.foreman
