@@ -105,6 +105,9 @@ set nobackup
 set t_Co=256
 set background=dark
 
+" Use blowfish for encryption
+set cm=blowfish
+
 Bundle 'ag.vim'
 nnoremap <silent> <Leader>f :Ag<space>
 let g:agprg = 'ag --nogroup --nocolor --column'
