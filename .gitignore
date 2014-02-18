@@ -3,6 +3,8 @@
 .ec2
 bin/*
 vendor/ruby/*
+vendor/postgresql
+vendor/redis
 .envrc
 .env
 Procfile.local
