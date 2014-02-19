@@ -5,6 +5,7 @@ bin/*
 vendor/ruby/*
 vendor/postgresql
 vendor/redis
+vendor/mongodb
 .envrc
 .env
 Procfile.local
