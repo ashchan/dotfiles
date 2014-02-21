@@ -1,8 +1,0 @@
-# custom settings for Rime input(Squirrel)
-# ln -s /path/to/this ~/Library/Rime/default.custom.yaml
-patch:
-  schema_list:
-    - schema: wubi86
-    - schema: pinyin_simp
-    - schema: wubi_pinyin
-
