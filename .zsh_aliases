@@ -1,0 +1,1 @@
+alias fs="foreman start -f Procfile.local"
