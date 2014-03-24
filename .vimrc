@@ -123,14 +123,9 @@ if executable('ag')
 endif
 nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
-Bundle 'scrooloose/nerdtree'
-" NERDTree configuration
-let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$', 'tags']
-map <Leader>n :NERDTreeToggle<CR>
+map <Leader>n :Explore<CR>
 
 Bundle 'scrooloose/nerdcommenter'
-" Bundle 'ervandew/supertab'
-" let g:SuperTabMappingForward="<tab>"
 
 Bundle 'junegunn/vim-easy-align'
 vnoremap <silent> <Enter> :EasyAlign<cr>
@@ -165,16 +160,17 @@ let g:cssColorVimDoNotMessMyUpdatetime = 1
 
 Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'groenewege/vim-less'
-Bundle 'altercation/vim-colors-solarized'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'terryma/vim-expand-region'
 
-Bundle 'Valloric/YouCompleteMe'
-let g:ycm_collect_identifiers_from_tags_files = 1
-let g:ycm_seed_identifiers_with_syntax = 1
+Bundle 'Shougo/neocomplcache.vim'
+let g:neocomplcache_enable_at_startup = 1
+let g:neocomplcache_enable_smart_case = 1
+let g:neocomplcache_min_syntax_length = 3
 
 Bundle 'Keithbsmiley/investigate.vim'
 nnoremap Q :call investigate#Investigate()<CR>
 let g:investigate_use_dash = 1
 
+Bundle 'altercation/vim-colors-solarized'
 color solarized

@@ -10,3 +10,4 @@
 rdoc: --inline-source --line-numbers
 install: --no-rdoc --no-ri
 update:  --no-rdoc --no-ri
+gemsrc_clone_root: ~/src/gem-src
