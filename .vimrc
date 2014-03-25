@@ -123,7 +123,9 @@ if executable('ag')
 endif
 nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
+" netrw
 map <Leader>n :Explore<CR>
+let g:netrw_list_hide= '.*\.swp$,\.DS_Store,\.git/,log/\.sass-cache/,\.tags$'
 
 Bundle 'scrooloose/nerdcommenter'
 
