@@ -125,7 +125,7 @@ nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
 " netrw
 map <Leader>n :Explore<CR>
-let g:netrw_list_hide= '.*\.swp$,\.DS_Store,\.git/,log/\.sass-cache/,\.tags$,\.bundle/'
+let g:netrw_list_hide= '.*\.swp$,\.DS_Store,\.git/,log/\.sass-cache/,^tags$,\.bundle/'
 
 Bundle 'scrooloose/nerdcommenter'
 
@@ -165,10 +165,13 @@ Bundle 'groenewege/vim-less'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'terryma/vim-expand-region'
 
-Bundle 'Shougo/neocomplcache.vim'
-let g:neocomplcache_enable_at_startup = 1
-let g:neocomplcache_enable_smart_case = 1
-let g:neocomplcache_min_syntax_length = 3
+Bundle 'Valloric/YouCompleteMe'
+let g:ycm_collect_identifiers_from_tags_files = 1
+let g:ycm_seed_identifiers_with_syntax = 1
+"Bundle 'Shougo/neocomplcache.vim'
+"let g:neocomplcache_enable_at_startup = 1
+"let g:neocomplcache_enable_smart_case = 1
+"let g:neocomplcache_min_syntax_length = 3
 
 Bundle 'Keithbsmiley/investigate.vim'
 nnoremap Q :call investigate#Investigate()<CR>
