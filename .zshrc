@@ -4,7 +4,7 @@ export CLICOLOR=1
 export EDITOR=vim
 
 export GOPATH=$HOME/.go
-PATH=/usr/local/bin:/sbin:/usr/sbin:$PATH:$GOPATH/bin
+PATH=$PWD/bin:/usr/local/bin:/sbin:/usr/sbin:$PATH:$GOPATH/bin
 
 setopt prompt_subst
 autoload colors zsh/terminfo
