@@ -173,9 +173,9 @@ let g:ycm_seed_identifiers_with_syntax = 1
 "let g:neocomplcache_enable_smart_case = 1
 "let g:neocomplcache_min_syntax_length = 3
 
-Bundle 'Keithbsmiley/investigate.vim'
-nnoremap Q :call investigate#Investigate()<CR>
-let g:investigate_use_dash = 1
+Bundle 'rizzatti/funcoo.vim'
+Bundle 'rizzatti/dash.vim'
+:nmap <silent> Q <Plug>DashSearch
 
 Bundle 'altercation/vim-colors-solarized'
 color solarized
