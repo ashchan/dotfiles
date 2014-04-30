@@ -10,3 +10,4 @@ vendor/mongodb
 .env
 Procfile.local
 .foreman
+.vagrant
