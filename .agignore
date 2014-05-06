@@ -8,3 +8,6 @@ public/system
 .sass-cache
 *.tags*
 *.swp
+*.js.map
+*.min.map
+*.css.map
