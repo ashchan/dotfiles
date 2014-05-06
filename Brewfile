@@ -1,14 +1,15 @@
 update
 
-install cmake
 install zsh
-install --override-system-vi vim
+#install apple-gcc42
+install cmake
+install wget
+install curl
 install git
+install --override-system-vi vim
 install ack
 install the_silver_searcher
 install tmux
-install wget
-install curl
 install reattach-to-user-namespace
 install p7zip
 install ctags
@@ -17,6 +18,12 @@ install direnv
 install chruby
 install ruby-install
 
+tap phinze/cask
+install brew-cask
+
+tap homebrew/binary
+cask install vagrant --appdir=/Applications
+cask install virtualbox --appdir=/Applications
 install docker
 install boot2docker
 
@@ -37,7 +44,3 @@ install go
 #install ec2-api-tools
 #install elb-tools
 
-tap phinze/cask
-install brew-cask
-
-#install apple-gcc42
