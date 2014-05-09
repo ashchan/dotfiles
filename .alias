@@ -3,3 +3,4 @@ function kp {
   sudo kill -15 `ps -ef | grep $1 | grep -v grep | awk '{print $2}'`;
 }
 
+alias fix_ios_simulator="launchctl list|grep UIKitApplication|awk '{print $3}'|xargs launchctl remove"

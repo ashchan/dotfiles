@@ -70,6 +70,7 @@ endfunction
 
 au FileType make set noexpandtab
 au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Capfile,config.ru}    set ft=ruby
+au BufRead,BufNewFile {Dockerfile*,*.dock} set ft=Dockerfile
 au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} set ft=markdown " call s:setupMarkup()
 au BufNewFile,BufRead *.{json,js} set ft=javascript
 au FileType javascript set tabstop=2 softtabstop=2 shiftwidth=2
@@ -177,5 +178,8 @@ Bundle 'rizzatti/funcoo.vim'
 Bundle 'rizzatti/dash.vim'
 :nmap <silent> Q <Plug>DashSearch
 
+Bundle "ekalinin/Dockerfile.vim"
+
 Bundle 'altercation/vim-colors-solarized'
 color solarized
+

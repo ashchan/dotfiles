@@ -1,7 +1,6 @@
 set -o vi
 bindkey "^R" history-incremental-search-backward
 export CLICOLOR=1
-export EDITOR=vim
 
 export GOPATH=$HOME/.go
 PATH=$PWD/bin:/usr/local/bin:/sbin:/usr/sbin:$PATH:$GOPATH/bin
@@ -21,4 +20,5 @@ source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
 eval "$(direnv hook $0)"
 
-source ~/.zsh_aliases
+source ~/.aliases
+source ~/.exports
