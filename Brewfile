@@ -1,6 +1,5 @@
 update
 
-install zsh
 #install apple-gcc42
 install cmake
 install wget
