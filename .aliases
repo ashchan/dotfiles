@@ -4,3 +4,4 @@ function kp {
 }
 
 alias fix_ios_simulator="launchctl list|grep UIKitApplication|awk '{print $3}'|xargs launchctl remove"
+alias swift="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift"
