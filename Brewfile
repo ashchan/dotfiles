@@ -4,6 +4,7 @@ update
 install cmake
 install wget
 install curl
+install s3cmd
 install git
 install --override-system-vi vim
 install ack
