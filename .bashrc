@@ -1,6 +1,5 @@
 export GOPATH=$HOME/Projects/go
-export PATH="/usr/local/bin:/usr/local/sbin:$GOPATH/bin:$PATH"
-PATH=$GEM_HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH:$GOPATH/bin
+export PATH="$PWD/bin:$PATH"
 
 source /usr/local/etc/bash_completion.d/git-completion.bash
 source /usr/local/etc/bash_completion.d/git-prompt.sh
