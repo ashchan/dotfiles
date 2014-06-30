@@ -13,6 +13,7 @@ install tmux
 install reattach-to-user-namespace
 install p7zip
 install ctags
+install wrk
 
 install direnv
 install chruby
@@ -30,6 +31,7 @@ install boot2docker
 install node
 install redis
 install mysql
+install memcached
 install mongodb
 install postgresql
 

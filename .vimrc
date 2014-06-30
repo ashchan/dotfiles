@@ -147,7 +147,6 @@ Bundle 'tpope/vim-rails.git'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'pangloss/vim-javascript'
 Bundle 'maksimr/vim-jsbeautify'
-Bundle 'digitaltoad/vim-jade'
 Bundle 'plasticboy/vim-markdown'
 
 Bundle 'jgdavey/vim-turbux'
@@ -162,17 +161,12 @@ Bundle 'ap/vim-css-color'
 let g:cssColorVimDoNotMessMyUpdatetime = 1
 
 Bundle 'cakebaker/scss-syntax.vim'
-Bundle 'groenewege/vim-less'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'terryma/vim-expand-region'
 
 Bundle 'Valloric/YouCompleteMe'
 let g:ycm_collect_identifiers_from_tags_files = 1
 let g:ycm_seed_identifiers_with_syntax = 1
-"Bundle 'Shougo/neocomplcache.vim'
-"let g:neocomplcache_enable_at_startup = 1
-"let g:neocomplcache_enable_smart_case = 1
-"let g:neocomplcache_min_syntax_length = 3
 
 Bundle 'rizzatti/funcoo.vim'
 Bundle 'rizzatti/dash.vim'
