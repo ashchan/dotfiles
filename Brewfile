@@ -14,6 +14,7 @@ install reattach-to-user-namespace
 install p7zip
 install ctags
 install wrk
+install sshuttle
 
 install direnv
 install chruby
