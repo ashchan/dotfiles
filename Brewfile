@@ -16,6 +16,8 @@ install ctags
 install wrk
 install sshuttle
 
+install go
+
 install direnv
 install chruby
 install ruby-install
@@ -29,6 +31,8 @@ cask install virtualbox --appdir=/Applications
 install docker
 install boot2docker
 
+cask install hydra
+
 install node
 install redis
 install mysql
@@ -38,8 +42,6 @@ install postgresql
 
 install logstalgia
 install imagemagick
-
-install go
 
 #install dnsmasq
 #install rinetd
