@@ -29,7 +29,12 @@ install ruby-install
 cask install appcleaner
 cask install the-unarchiver
 cask install cakebrew
+
 cask install hydra
+cask install spectacle
+cask install shiftit
+cask install slate
+
 cask install gitx-rowanj
 cask install hipchat
 cask install keyremap4macbook
