@@ -31,6 +31,8 @@ cask install the-unarchiver
 cask install cakebrew
 
 cask install boot2docker
+cask install vagrant
+cask install virtualbox --appdir=/Applications
 
 cask install hydra
 cask install spectacle
@@ -75,12 +77,6 @@ cask install selfcontrol
 cask install rescuetime
 cask install colorpicker-skalacolor
 cask install simpholders
-
-cask install vagrant --appdir=/Applications
-cask install virtualbox --appdir=/Applications
-
-install docker
-install boot2docker
 
 install node
 install redis
