@@ -30,10 +30,17 @@ cask install appcleaner
 cask install the-unarchiver
 cask install cakebrew
 
+cask install boot2docker
+
 cask install hydra
 cask install spectacle
 cask install shiftit
 cask install slate
+
+cask install osxfuse
+cask install sshfs
+
+cask install airdisplay
 
 cask install gitx-rowanj
 cask install hipchat
@@ -65,6 +72,7 @@ cask install sequel-pro
 cask install robomongo
 cask install rdm
 cask install selfcontrol
+cask install rescuetime
 cask install colorpicker-skalacolor
 cask install simpholders
 
