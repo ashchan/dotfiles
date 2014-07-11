@@ -49,6 +49,7 @@ cask install hipchat
 cask install keyremap4macbook
 cask install mplayerx
 cask install vlc
+cask install mpv
 cask install spotify
 cask install cocoarestclient
 cask install easysimbl
