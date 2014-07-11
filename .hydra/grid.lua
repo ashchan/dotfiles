@@ -1,105 +1,159 @@
 ext.grid = {}
+ext.grid.BORDER = 2
 
-ext.grid.MARGINX = 0
-ext.grid.MARGINY = 0
-ext.grid.GRIDWIDTH = 5
+function ext.grid.fullscreen()
+  local win = window.focusedwindow()
 
-local function round(num, idp)
-  local mult = 10^(idp or 0)
-  return math.floor(num * mult + 0.5) / mult
+  local screenframe = ext.grid.screenframe(win)
+  win:setframe(screenframe)
 end
 
-function ext.grid.get(win)
-  local winframe = win:frame()
-  local screenrect = win:screen():frame_without_dock_or_menu()
-  local thirdscreenwidth = screenrect.w / ext.grid.GRIDWIDTH
-  local halfscreenheight = screenrect.h / 2
-  return {
-    x = round((winframe.x - screenrect.x) / thirdscreenwidth),
-    y = round((winframe.y - screenrect.y) / halfscreenheight),
-    w = math.max(1, round(winframe.w / thirdscreenwidth)),
-    h = math.max(1, round(winframe.h / halfscreenheight)),
-  }
-end
+function ext.grid.lefthalf()
+  local win = window.focusedwindow()
 
-function ext.grid.set(win, grid, screen)
-  local screenrect = screen:frame_without_dock_or_menu()
-  local thirdscreenwidth = screenrect.w / ext.grid.GRIDWIDTH
-  local halfscreenheight = screenrect.h / 2
+  local screenframe = ext.grid.screenframe(win)
   local newframe = {
-    x = (grid.x * thirdscreenwidth) + screenrect.x,
-    y = (grid.y * halfscreenheight) + screenrect.y,
-    w = grid.w * thirdscreenwidth,
-    h = grid.h * halfscreenheight,
+    x = screenframe.x,
+    y = screenframe.y,
+    w = screenframe.w / 2 - ext.grid.BORDER,
+    h = screenframe.h,
   }
-
-  newframe.x = newframe.x + ext.grid.MARGINX
-  newframe.y = newframe.y + ext.grid.MARGINY
-  newframe.w = newframe.w - (ext.grid.MARGINX * 2)
-  newframe.h = newframe.h - (ext.grid.MARGINY * 2)
 
   win:setframe(newframe)
 end
 
-function ext.grid.snap(win)
-  if win:isstandard() then
-    ext.grid.set(win, ext.grid.get(win), win:screen())
-  end
-end
-
-function ext.grid.adjustwidth(by)
-  ext.grid.GRIDWIDTH = math.max(1, ext.grid.GRIDWIDTH + by)
-  hydra.alert("grid is now " .. tostring(ext.grid.GRIDWIDTH) .. " tiles wide", 1)
-  fnutils.map(window.visiblewindows(), ext.grid.snap)
-end
-
-function ext.grid.adjust_focused_window(fn)
+function ext.grid.righthalf()
   local win = window.focusedwindow()
-  local f = ext.grid.get(win)
-  fn(f)
-  ext.grid.set(win, f, win:screen())
+
+  local screenframe = ext.grid.screenframe(win)
+  local newframe = {
+    x = screenframe.x + screenframe.w / 2 + ext.grid.BORDER,
+    y = screenframe.y,
+    w = screenframe.w / 2 - ext.grid.BORDER,
+    h = screenframe.h,
+  }
+
+  win:setframe(newframe)
 end
 
-function ext.grid.maximize_window()
+function ext.grid.topleft()
   local win = window.focusedwindow()
-  local f = {x = 0, y = 0, w = ext.grid.GRIDWIDTH, h = 2}
-  ext.grid.set(win, f, win:screen())
+
+  local screenframe = ext.grid.screenframe(win)
+  local newframe = {
+    x = screenframe.x,
+    y = screenframe.y,
+    w = screenframe.w / 2 - ext.grid.BORDER,
+    h = screenframe.h / 2 - ext.grid.BORDER,
+  }
+
+  win:setframe(newframe)
 end
 
-function ext.grid.pushwindow_nextscreen()
+function ext.grid.bottomleft()
   local win = window.focusedwindow()
-  ext.grid.set(win, ext.grid.get(win), win:screen():next())
+
+  local screenframe = ext.grid.screenframe(win)
+  local newframe = {
+    x = screenframe.x,
+    y = screenframe.y + screenframe.h / 2 + ext.grid.BORDER,
+    w = screenframe.w / 2 - ext.grid.BORDER,
+    h = screenframe.h / 2 - ext.grid.BORDER,
+  }
+
+  win:setframe(newframe)
 end
 
-function ext.grid.pushwindow_prevscreen()
+function ext.grid.topright()
   local win = window.focusedwindow()
-  ext.grid.set(win, ext.grid.get(win), win:screen():previous())
+
+  local screenframe = ext.grid.screenframe(win)
+  local newframe = {
+    x = screenframe.x + screenframe.w / 2 + ext.grid.BORDER,
+    y = screenframe.y,
+    w = screenframe.w / 2 - ext.grid.BORDER,
+    h = screenframe.h / 2 - ext.grid.BORDER,
+  }
+
+  win:setframe(newframe)
 end
 
-function ext.grid.pushwindow_left()
-  ext.grid.adjust_focused_window(function(f) f.x = math.max(f.x - 1, 0) end)
+function ext.grid.bottomright()
+  local win = window.focusedwindow()
+
+  local screenframe = ext.grid.screenframe(win)
+  local newframe = {
+    x = screenframe.x + screenframe.w / 2 + ext.grid.BORDER,
+    y = screenframe.y + screenframe.h / 2 + ext.grid.BORDER,
+    w = screenframe.w / 2 - ext.grid.BORDER,
+    h = screenframe.h / 2 - ext.grid.BORDER,
+  }
+
+  win:setframe(newframe)
 end
 
-function ext.grid.pushwindow_right()
-  ext.grid.adjust_focused_window(function(f) f.x = math.min(f.x + 1, ext.grid.GRIDWIDTH - f.w) end)
+function ext.grid.pushwindow()
+  local win = window.focusedwindow()
+
+  local winframe = win:frame()
+  local nextscreen = win:screen():next()
+  local screenframe = nextscreen:frame_without_dock_or_menu()
+  local newframe = {
+    x = screenframe.x,
+    y = screenframe.y,
+    w = winframe.w,
+    h = winframe.h,
+  }
+
+  win:setframe(newframe)
 end
 
-function ext.grid.resizewindow_wider()
-  ext.grid.adjust_focused_window(function(f) f.w = math.min(f.w + 1, ext.grid.GRIDWIDTH - f.x) end)
+function ext.grid.center()
+  local win = window.focusedwindow()
+
+  local winframe = win:frame()
+  local screenframe = ext.grid.screenframe(win)
+  local newframe = {
+    x = screenframe.w / 2 - winframe.w / 2,
+    y = screenframe.h / 2 - winframe.h / 2,
+    w = winframe.w,
+    h = winframe.h,
+  }
+
+  win:setframe(newframe)
 end
 
-function ext.grid.resizewindow_thinner()
-  ext.grid.adjust_focused_window(function(f) f.w = math.max(f.w - 1, 1) end)
+function ext.grid.screenframe(win)
+  return win:screen():frame_without_dock_or_menu()
 end
 
-function ext.grid.pushwindow_down()
-  ext.grid.adjust_focused_window(function(f) f.y = 1; f.h = 1 end)
+-- Customized versions of lefthalf() and righthalf() that make the left side slightly wider:
+function ext.grid.leftchunk()
+  local win = window.focusedwindow()
+  if not win then return end
+
+  local screenframe = ext.grid.screenframe(win)
+  local newframe = {
+    x = screenframe.x,
+    y = screenframe.y,
+    w = screenframe.w * 0.6 - ext.grid.BORDER,
+    h = screenframe.h,
+  }
+
+  win:setframe(newframe)
 end
 
-function ext.grid.pushwindow_up()
-  ext.grid.adjust_focused_window(function(f) f.y = 0; f.h = 1 end)
-end
+function ext.grid.rightchunk()
+  local win = window.focusedwindow()
+  if not win then return end
 
-function ext.grid.resizewindow_taller()
-  ext.grid.adjust_focused_window(function(f) f.y = 0; f.h = 2 end)
+  local screenframe = ext.grid.screenframe(win)
+  local newframe = {
+    x = screenframe.x + screenframe.w * 0.6 + ext.grid.BORDER,
+    y = screenframe.y,
+    w = screenframe.w * 0.4 - ext.grid.BORDER,
+    h = screenframe.h,
+  }
+
+  win:setframe(newframe)
 end

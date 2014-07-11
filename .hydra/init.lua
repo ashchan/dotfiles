@@ -1,4 +1,5 @@
-require "grid"
+dofile(package.searchpath("grid", package.path))
+dofile(package.searchpath("win", package.path))
 
 hydra.alert "Hydra loaded."
 
@@ -19,41 +20,25 @@ local mash = {"cmd", "shift"}
 local function opendictionary()
     application.launchorfocus("Dictionary")
 end
-
-local function movewindow_rightside()
-  local win = window.focusedwindow()
-  local newframe = win:screen():frame_without_dock_or_menu()
-  newframe.w = newframe.w / 2
-  newframe.x = newframe.w
-  win:setframe(newframe)
-end
-
-local function movewindow_leftside()
-  local win = window.focusedwindow()
-  local newframe = win:screen():frame_without_dock_or_menu()
-  newframe.w = newframe.w / 2
-  win:setframe(newframe)
-end
-
 hotkey.bind(mash, 'D', opendictionary)
 
-hotkey.bind(mash, ';', function() ext.grid.snap(window.focusedwindow()) end)
+hotkey.bind(mash, 'M', ext.grid.fullscreen)
+hotkey.bind(mash, 'N', ext.grid.center)
 
-hotkey.bind(mash, '=', function() ext.grid.adjustwidth( 1) end)
-hotkey.bind(mash, '-', function() ext.grid.adjustwidth(-1) end)
+hotkey.bind(mash, 'H', ext.grid.lefthalf)
+hotkey.bind(mash, 'L', ext.grid.righthalf)
+hotkey.bind(mash, ',', ext.grid.leftchunk)
+hotkey.bind(mash, '.', ext.grid.rightchunk)
 
-hotkey.bind(mash, 'M', ext.grid.maximize_window)
+fnutils.each({ "up", "down", "left", "right" }, function(direction)
+  hotkey.bind(mash, direction, dowin(ext.win.push, direction))
+end)
 
-hotkey.bind(mash, 'N', ext.grid.pushwindow_nextscreen)
-hotkey.bind(mash, 'P', ext.grid.pushwindow_prevscreen)
-
-hotkey.bind(mash, 'J', ext.grid.pushwindow_down)
-hotkey.bind(mash, 'K', ext.grid.pushwindow_up)
-hotkey.bind(mash, 'H', movewindow_leftside)
-hotkey.bind(mash, 'L', movewindow_rightside)
-
-hotkey.bind(mash, 'O', ext.grid.resizewindow_wider)
-hotkey.bind(mash, 'I', ext.grid.resizewindow_thinner)
+local cash = {"cmd", "ctrl"}
+hotkey.bind(cash, 'left', ext.grid.topleft)
+hotkey.bind(cash, 'up', ext.grid.topright)
+hotkey.bind(cash, 'right', ext.grid.bottomright)
+hotkey.bind(cash, 'down', ext.grid.bottomleft)
 
 hotkey.bind(mash, 'X', logger.show)
 hotkey.bind(mash, "R", repl.open)
