@@ -34,7 +34,6 @@ cask install boot2docker
 cask install vagrant
 cask install virtualbox --appdir=/Applications
 
-cask install hydra
 cask install spectacle
 cask install shiftit
 cask install slate
