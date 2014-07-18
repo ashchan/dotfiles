@@ -19,6 +19,7 @@ install p7zip
 install ctags
 install wrk
 install sshuttle
+install mitmproxy
 
 install go
 
