@@ -8,6 +8,7 @@ install brew-cask
 install cmake
 install wget
 install curl
+install httpie
 install s3cmd
 install git
 install --override-system-vi vim
@@ -33,7 +34,6 @@ cask install cakebrew
 
 cask install boot2docker
 cask install vagrant
-cask install virtualbox --appdir=/Applications
 
 cask install spectacle
 cask install shiftit
