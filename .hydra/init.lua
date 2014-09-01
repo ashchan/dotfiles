@@ -36,7 +36,7 @@ end)
 
 local cash = {"cmd", "ctrl"}
 hotkey.bind(cash, 'left', ext.grid.topleft)
-hotkey.bind(cash, 'up', ext.grid.topright)
+--hotkey.bind(cash, 'up', ext.grid.topright)
 hotkey.bind(cash, 'right', ext.grid.bottomright)
 hotkey.bind(cash, 'down', ext.grid.bottomleft)
 
