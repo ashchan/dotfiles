@@ -148,6 +148,7 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'pangloss/vim-javascript'
 Bundle 'maksimr/vim-jsbeautify'
 Bundle 'plasticboy/vim-markdown'
+Bundle 'slim-template/vim-slim.git'
 
 Bundle 'jgdavey/vim-turbux'
 let g:turbux_command_prefix = 'bundle exec'
