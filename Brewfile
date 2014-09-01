@@ -14,6 +14,7 @@ install git
 install --override-system-vi vim
 install ack
 install the_silver_searcher
+install pt
 install tmux
 install reattach-to-user-namespace
 install p7zip
