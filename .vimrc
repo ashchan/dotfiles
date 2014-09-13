@@ -112,7 +112,15 @@ set cm=blowfish
 
 Bundle 'ag.vim'
 nnoremap <silent> <Leader>f :Ag<space>
-let g:agprg = 'ag --nogroup --nocolor --column'
+set grepprg=ag\ --nogroup\ --nocolor
+
+if executable('pt')
+  let g:agprg = 'pt --nogroup --nocolor'
+elseif executable('ag')
+  let g:agprg = 'ag --nogroup --nocolor --column'
+endif
+
+nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
 Bundle 'kien/ctrlp.vim'
 let g:ctrlp_working_path_mode = 2
@@ -121,9 +129,7 @@ let g:ctrlp_dotfiles = 0
 if executable('ag')
   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
   let g:ctrlp_use_caching = 0
-  set grepprg=ag\ --nogroup\ --nocolor
 endif
-nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
 " netrw
 map <Leader>n :Explore<CR>
