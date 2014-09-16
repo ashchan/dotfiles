@@ -114,9 +114,7 @@ Bundle 'ag.vim'
 nnoremap <silent> <Leader>f :Ag<space>
 set grepprg=ag\ --nogroup\ --nocolor
 
-if executable('pt')
-  let g:agprg = 'pt --nogroup --nocolor'
-elseif executable('ag')
+if executable('ag')
   let g:agprg = 'ag --nogroup --nocolor --column'
 endif
 
