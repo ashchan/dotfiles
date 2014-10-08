@@ -22,6 +22,7 @@ install ctags
 install wrk
 install sshuttle
 install mitmproxy
+install ffmpeg
 
 install go
 
