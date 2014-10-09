@@ -30,6 +30,8 @@ install direnv
 install chruby
 install ruby-install
 
+cask install xquartz
+
 cask install appcleaner
 cask install the-unarchiver
 cask install cakebrew
