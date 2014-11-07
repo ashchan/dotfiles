@@ -82,6 +82,7 @@ cask install selfcontrol
 cask install rescuetime
 cask install colorpicker-skalacolor
 cask install simpholders
+cask install sketch-toolbox
 
 install node
 install redis
