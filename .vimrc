@@ -54,7 +54,7 @@ map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
 map <C-\> :tnext<CR>
 
 " Marked
-:map <leader>m :!open -a Marked.app '%:p'<CR><CR>
+:map <leader>m :!open -a "Marked 2.app" '%:p'<CR><CR>
 
 " Remember last location in file
 if has("autocmd")
