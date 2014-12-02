@@ -76,6 +76,7 @@ cask install skype
 cask install postgres
 cask install pg-commander
 cask install sequel-pro
+cask intalll psequel
 cask install robomongo
 cask install rdm
 cask install selfcontrol
