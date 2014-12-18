@@ -8,6 +8,7 @@ install brew-cask
 install cmake
 install wget
 install curl
+install mackup
 install httpie
 install s3cmd
 install git
