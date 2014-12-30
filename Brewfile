@@ -15,7 +15,7 @@ install git
 install --override-system-vi vim
 install ack
 install the_silver_searcher
-install pt
+#install pt
 install tmux
 install reattach-to-user-namespace
 install p7zip
@@ -35,26 +35,22 @@ cask install xquartz
 
 cask install appcleaner
 cask install the-unarchiver
-cask install cakebrew
+#cask install cakebrew
 
 cask install boot2docker
-cask install vagrant
+#cask install vagrant
 
 cask install spectacle
-cask install shiftit
-cask install slate
+#cask install shiftit
+#cask install slate
 
-cask install osxfuse
-cask install sshfs
-
-cask install airdisplay
+#cask install osxfuse
+#cask install sshfs
 
 cask install gitx-rowanj
 cask install hipchat
 cask install keyremap4macbook
-cask install mplayerx
 cask install vlc
-cask install mpv
 cask install spotify
 cask install cocoarestclient
 cask install easysimbl
@@ -62,24 +58,21 @@ cask install flux
 cask install firefox
 cask install google-chrome
 cask install node-webkit
-cask install multibit
-cask install bittorrent-sync
-cask install crashlytics
+#cask install multibit
+#cask install bittorrent-sync
 cask install imageoptim
 cask install kindle
 cask install lightpaper
 cask install inboaard
-cask install marked
-cask install nitrous-desktop
+#cask install nitrous-desktop
 cask install ibettercharge
-cask install hype
+#cask install hype
 cask install skype
 cask install postgres
-cask install pg-commander
 cask install sequel-pro
 cask intalll psequel
-cask install robomongo
-cask install rdm
+#cask install robomongo
+#cask install rdm
 cask install selfcontrol
 cask install rescuetime
 cask install colorpicker-skalacolor
