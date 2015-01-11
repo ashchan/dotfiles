@@ -184,7 +184,6 @@ Bundle "mattn/emmet-vim"
 let g:user_emmet_settings = { 'indentation' : '  ' }
 
 Bundle "mikewest/vimroom"
-let g:vimroom_width = 100
 
 Bundle 'altercation/vim-colors-solarized'
 color solarized
