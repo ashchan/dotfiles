@@ -86,6 +86,8 @@ install memcached
 install mongodb
 install postgresql
 
+install phantomjs
+
 install logstalgia
 install imagemagick
 
