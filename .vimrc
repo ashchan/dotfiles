@@ -29,11 +29,53 @@ set noequalalways
 
 let mapleader = ","
 
-" vunble
 filetype off
-set rtp+=~/.vim/bundle/vundle
-call vundle#rc()
-Bundle 'gmarik/vundle'
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+  Plugin 'gmarik/Vundle.vim'
+
+  Plugin 'rking/ag.vim'
+  Plugin 'kien/ctrlp.vim'
+  Plugin 'scrooloose/nerdcommenter'
+  Plugin 'junegunn/vim-easy-align'
+  Plugin 'scrooloose/syntastic'
+  Plugin 'bronson/vim-trailing-whitespace'
+  Plugin 'tpope/vim-surround'
+  Plugin 'tpope/vim-rails.git'
+
+  Plugin 'kchmck/vim-coffee-script'
+  Plugin 'pangloss/vim-javascript'
+  Plugin 'maksimr/vim-jsbeautify'
+  Plugin 'plasticboy/vim-markdown'
+  Plugin 'slim-template/vim-slim.git'
+  Plugin 'ap/vim-css-color'
+
+  Plugin 'cakebaker/scss-syntax.vim'
+  Plugin 'terryma/vim-multiple-cursors'
+  Plugin 'terryma/vim-expand-region'
+
+  Plugin 'tpope/vim-fugitive'
+  Plugin 'tpope/vim-dispatch'
+  Plugin 'jnwhiteh/vim-golang'
+  Plugin 'Blackrush/vim-gocode'
+
+  Plugin 'Valloric/YouCompleteMe'
+
+  Plugin 'rizzatti/funcoo.vim'
+  Plugin 'rizzatti/dash.vim'
+
+  Plugin 'ekalinin/Dockerfile.vim'
+
+  Plugin 'mattn/emmet-vim'
+
+  Plugin 'mikewest/vimroom'
+
+  Plugin 'altercation/vim-colors-solarized'
+
+call vundle#end()
+
 filetype on
 filetype plugin indent on
 
@@ -110,7 +152,7 @@ set background=dark
 " Use blowfish for encryption
 set cm=blowfish
 
-Bundle 'ag.vim'
+" rking/ag.vim
 nnoremap <silent> <Leader>f :Ag<space>
 set grepprg=ag\ --nogroup\ --nocolor
 
@@ -120,7 +162,7 @@ endif
 
 nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
-Bundle 'kien/ctrlp.vim'
+" kien/ctrlp.vim
 let g:ctrlp_working_path_mode = 2
 let g:ctrlp_dotfiles = 0
 
@@ -133,58 +175,31 @@ endif
 map <Leader>n :Explore<CR>
 let g:netrw_list_hide= '.*\.swp$,\.DS_Store,\.git/,log/\.sass-cache/,^tags$,\.bundle/'
 
-Bundle 'scrooloose/nerdcommenter'
-
-Bundle 'junegunn/vim-easy-align'
+" junegunn/vim-easy-align
 vnoremap <silent> <Enter> :EasyAlign<cr>
 
-Bundle 'scrooloose/syntastic'
+" scrooloose/syntastic
 let g:syntastic_enable_signs=1
 let g:syntastic_go_checkers=['golint']
 
-Bundle 'vim-scripts/trailing-whitespace'
-Bundle 'surround.vim'
-
-Bundle 'tpope/vim-rails.git'
 " OpenURL for rails.vim
 :command -bar -nargs=1 OpenURL :!open <args>
 
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'pangloss/vim-javascript'
-Bundle 'maksimr/vim-jsbeautify'
-Bundle 'plasticboy/vim-markdown'
-Bundle 'slim-template/vim-slim.git'
-
-Bundle 'jgdavey/vim-turbux'
+" jgdavey/vim-turbux
 let g:turbux_command_prefix = 'bundle exec'
 
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-dispatch'
-Bundle 'jnwhiteh/vim-golang'
-Bundle 'Blackrush/vim-gocode'
-
-Bundle 'ap/vim-css-color'
+" ap/vim-css-color
 let g:cssColorVimDoNotMessMyUpdatetime = 1
 
-Bundle 'cakebaker/scss-syntax.vim'
-Bundle 'terryma/vim-multiple-cursors'
-Bundle 'terryma/vim-expand-region'
-
-Bundle 'Valloric/YouCompleteMe'
+" Valloric/YouCompleteMe
 let g:ycm_collect_identifiers_from_tags_files = 1
 let g:ycm_seed_identifiers_with_syntax = 1
 
-Bundle 'rizzatti/funcoo.vim'
-Bundle 'rizzatti/dash.vim'
+" rizzatti/dash.vim
 :nmap <silent> Q <Plug>DashSearch
 
-Bundle "ekalinin/Dockerfile.vim"
-
-Bundle "mattn/emmet-vim"
+" mattn/emmet-vim
 let g:user_emmet_settings = { 'indentation' : '  ' }
 
-Bundle "mikewest/vimroom"
-
-Bundle 'altercation/vim-colors-solarized'
 color solarized
 
