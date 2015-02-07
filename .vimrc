@@ -123,7 +123,6 @@ au BufRead,BufNewFile *.jade set ft=jade
 au BufRead,BufNewFile *.slim set ft=slim
 au BufRead,BufNewFile,BufReadPost *.go set ft=go
 au FileType go set noexpandtab tabstop=4 softtabstop=4 shiftwidth=4
-autocmd FileType go autocmd BufWritePre <buffer> Fmt
 au FileType objc set tabstop=4 softtabstop=4 shiftwidth=4
 autocmd Filetype gitcommit setlocal spell textwidth=72
 
