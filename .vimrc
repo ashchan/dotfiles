@@ -64,8 +64,7 @@ call vundle#begin()
   Plugin 'ap/vim-css-color'
   Plugin 'cakebaker/scss-syntax.vim'
 
-  Plugin 'jnwhiteh/vim-golang'
-  Plugin 'Blackrush/vim-gocode'
+  Plugin 'fatih/vim-go'
 
   Plugin 'ekalinin/Dockerfile.vim'
 
