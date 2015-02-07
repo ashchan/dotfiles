@@ -154,10 +154,11 @@ set cm=blowfish
 
 " rking/ag.vim
 nnoremap <silent> <Leader>f :Ag<space>
-set grepprg=ag\ --nogroup\ --nocolor
+set grepprg=ag\ --vimgrep\ --nogroup\ --nocolor
 
 if executable('ag')
-  let g:agprg = 'ag --nogroup --nocolor --column'
+  let g:agprg = 'ag --vimgrep --smart-case --nogroup --nocolor --column'
+  let g:ag_highlight = 1
 endif
 
 nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
