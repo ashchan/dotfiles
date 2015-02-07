@@ -38,39 +38,35 @@ call vundle#begin()
 
   Plugin 'rking/ag.vim'
   Plugin 'kien/ctrlp.vim'
+  Plugin 'jgdavey/vim-turbux'
+  Plugin 'tpope/vim-dispatch'
+  Plugin 'tpope/vim-fugitive'
+  Plugin 'Valloric/YouCompleteMe'
   Plugin 'scrooloose/nerdcommenter'
   Plugin 'junegunn/vim-easy-align'
   Plugin 'scrooloose/syntastic'
   Plugin 'bronson/vim-trailing-whitespace'
   Plugin 'tpope/vim-surround'
-  Plugin 'tpope/vim-rails.git'
+  Plugin 'terryma/vim-multiple-cursors'
+  Plugin 'terryma/vim-expand-region'
+  Plugin 'mikewest/vimroom'
+  Plugin 'rizzatti/dash.vim'
 
+  Plugin 'tpope/vim-rails.git'
+  Plugin 'mattn/emmet-vim'
   Plugin 'kchmck/vim-coffee-script'
   Plugin 'pangloss/vim-javascript'
   Plugin 'maksimr/vim-jsbeautify'
   Plugin 'plasticboy/vim-markdown'
   Plugin 'slim-template/vim-slim.git'
+
   Plugin 'ap/vim-css-color'
-
   Plugin 'cakebaker/scss-syntax.vim'
-  Plugin 'terryma/vim-multiple-cursors'
-  Plugin 'terryma/vim-expand-region'
 
-  Plugin 'tpope/vim-fugitive'
-  Plugin 'tpope/vim-dispatch'
   Plugin 'jnwhiteh/vim-golang'
   Plugin 'Blackrush/vim-gocode'
 
-  Plugin 'Valloric/YouCompleteMe'
-
-  Plugin 'rizzatti/funcoo.vim'
-  Plugin 'rizzatti/dash.vim'
-
   Plugin 'ekalinin/Dockerfile.vim'
-
-  Plugin 'mattn/emmet-vim'
-
-  Plugin 'mikewest/vimroom'
 
   Plugin 'altercation/vim-colors-solarized'
 
