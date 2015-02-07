@@ -47,6 +47,7 @@ call vundle#begin()
   Plugin 'scrooloose/syntastic'
   Plugin 'bronson/vim-trailing-whitespace'
   Plugin 'tpope/vim-surround'
+  Plugin 'tpope/vim-repeat'
   Plugin 'terryma/vim-multiple-cursors'
   Plugin 'terryma/vim-expand-region'
   Plugin 'mikewest/vimroom'
