@@ -5,6 +5,7 @@ bower_components/
 vendor/
 tmp
 public/system
+public/assets
 .sass-cache
 *.tags*
 *.swp
