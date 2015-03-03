@@ -197,5 +197,8 @@ let g:ycm_seed_identifiers_with_syntax = 1
 " mattn/emmet-vim
 let g:user_emmet_settings = { 'indentation' : '  ' }
 
+" plasticboy/vim-markdown
+let g:vim_markdown_folding_disabled=1
+
 color solarized
 
