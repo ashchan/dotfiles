@@ -57,6 +57,7 @@ call vundle#begin()
   Plugin 'mattn/emmet-vim'
   Plugin 'kchmck/vim-coffee-script'
   Plugin 'pangloss/vim-javascript'
+  Plugin 'elzr/vim-json'
   Plugin 'maksimr/vim-jsbeautify'
   Plugin 'plasticboy/vim-markdown'
   Plugin 'slim-template/vim-slim.git'
@@ -110,7 +111,7 @@ au FileType make set noexpandtab
 au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Capfile,config.ru}    set ft=ruby
 au BufRead,BufNewFile {Dockerfile*,*.dock} set ft=Dockerfile
 au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} set ft=markdown " call s:setupMarkup()
-au BufNewFile,BufRead *.{json,js} set ft=javascript
+au BufNewFile,BufRead *.{js} set ft=javascript
 au FileType javascript set tabstop=2 softtabstop=2 shiftwidth=2
 au BufRead,BufNewFile *.txt call s:setupWrapping()
 au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
