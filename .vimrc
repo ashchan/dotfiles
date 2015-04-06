@@ -44,7 +44,6 @@ call vundle#begin()
   Plugin 'Valloric/YouCompleteMe'
   Plugin 'scrooloose/nerdcommenter'
   Plugin 'junegunn/vim-easy-align'
-  Plugin 'scrooloose/syntastic'
   Plugin 'bronson/vim-trailing-whitespace'
   Plugin 'tpope/vim-surround'
   Plugin 'tpope/vim-repeat'
@@ -174,10 +173,6 @@ let g:netrw_list_hide= '.*\.swp$,\.DS_Store,\.git/,log/\.sass-cache/,^tags$,\.bu
 
 " junegunn/vim-easy-align
 vnoremap <silent> <Enter> :EasyAlign<cr>
-
-" scrooloose/syntastic
-let g:syntastic_enable_signs=1
-let g:syntastic_go_checkers=['golint']
 
 " OpenURL for rails.vim
 :command -bar -nargs=1 OpenURL :!open <args>
