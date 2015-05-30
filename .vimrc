@@ -2,6 +2,9 @@ set nocompatible
 set clipboard=unnamed
 set timeout timeoutlen=1000 ttimeoutlen=100
 
+let g:ruby_path = system('which ruby | sed "s/ruby$//"')
+set re=1
+
 " Set encoding
 set encoding=utf-8
 
