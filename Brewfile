@@ -5,6 +5,7 @@ tap caskroom/cask
 install brew-cask
 
 #install apple-gcc42
+install bash
 install cmake
 install wget
 install curl
@@ -49,7 +50,7 @@ cask install spectacle
 
 cask install gitx-rowanj
 cask install hipchat
-cask install keyremap4macbook
+cask install karabiner
 cask install vlc
 cask install spotify
 cask install cocoarestclient
