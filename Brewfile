@@ -79,6 +79,7 @@ cask install rescuetime
 cask install colorpicker-skalacolor
 cask install simpholders
 cask install sketch-toolbox
+cask install flowdock
 
 install node
 install redis
