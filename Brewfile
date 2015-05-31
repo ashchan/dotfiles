@@ -92,6 +92,7 @@ install postgresql
 install phantomjs
 
 install logstalgia
+install pkgconfig
 install imagemagick
 
 #install dnsmasq
