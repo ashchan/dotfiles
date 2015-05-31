@@ -78,6 +78,7 @@ cask intalll psequel
 cask install selfcontrol
 cask install rescuetime
 cask install colorpicker-skalacolor
+cask install colorpicker-developer
 cask install simpholders
 cask install sketch-toolbox
 cask install flowdock
