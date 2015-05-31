@@ -31,6 +31,7 @@ install go
 install direnv
 install chruby
 install ruby-install
+install heroku-toolbelt
 
 cask install xquartz
 
