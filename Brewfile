@@ -83,6 +83,11 @@ cask install simpholders
 cask install sketch-toolbox
 cask install flowdock
 
+cask install deploymate
+cask install droplr
+cask install spark-inspector
+cask install taskmate
+
 install node
 install redis
 install mysql
