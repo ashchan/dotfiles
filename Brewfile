@@ -9,6 +9,7 @@ install bash
 install cmake
 install wget
 install curl
+install httpie
 install mackup
 install httpie
 install s3cmd
