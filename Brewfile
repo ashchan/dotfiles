@@ -64,7 +64,6 @@ cask install node-webkit
 #cask install multibit
 #cask install bittorrent-sync
 cask install imageoptim
-cask install kindle
 cask install lightpaper
 cask install inboaard
 #cask install nitrous-desktop
@@ -83,6 +82,7 @@ cask install colorpicker-developer
 cask install simpholders
 cask install sketch-toolbox
 cask install flowdock
+cask install recordit
 
 cask install deploymate
 cask install droplr
