@@ -83,6 +83,7 @@ cask install simpholders
 cask install sketch-toolbox
 cask install flowdock
 cask install recordit
+cask install licecap
 
 cask install deploymate
 cask install droplr
