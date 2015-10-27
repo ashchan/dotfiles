@@ -156,7 +156,7 @@ nnoremap <silent> <Leader>f :Ag<space>
 set grepprg=ag\ --vimgrep\ --nogroup\ --nocolor
 
 if executable('ag')
-  let g:agprg = 'ag --vimgrep --smart-case --nogroup --nocolor --column'
+  let g:ag_prg = 'ag --vimgrep --smart-case --nogroup --nocolor --column'
   let g:ag_highlight = 1
 endif
 
