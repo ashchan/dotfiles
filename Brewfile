@@ -28,7 +28,7 @@ brew 'go'
 
 brew 'direnv'
 brew 'chruby'
-brew 'ruby-brew'
+brew 'ruby-install'
 #brew 'heroku-toolbelt'
 
 #cask 'xquartz'
