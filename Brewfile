@@ -1,109 +1,107 @@
-update
+cask_args appdir: '/Applications'
 
-tap homebrew/binary
-tap caskroom/cask
-install brew-cask
+tap 'caskroom/cask'
 
-#install apple-gcc42
-install bash
-install cmake
-install wget
-install curl
-install httpie
-install mackup
-install s3cmd
-install git
-install --override-system-vi vim
-install ack
-install the_silver_searcher
-#install pt
-install tmux
-#install reattach-to-user-namespace
-install p7zip
-install ctags
-install wrk
-install sshuttle
-install mitmproxy
-install ffmpeg
+#brew 'apple-gcc42
+brew 'bash'
+brew 'cmake'
+brew 'wget'
+brew 'curl'
+brew 'httpie'
+brew 'mackup'
+brew 's3cmd'
+brew 'git'
+brew '--override-system-vi vim'
+brew 'ack'
+brew 'the_silver_searcher'
+#brew 'pt'
+brew 'tmux'
+#brew 'reattach-to-user-namespace'
+brew 'p7zip'
+brew 'ctags'
+brew 'wrk'
+brew 'sshuttle'
+brew 'mitmproxy'
+brew 'ffmpeg'
 
-install go
+brew 'go'
 
-install direnv
-install chruby
-install ruby-install
-#install heroku-toolbelt
+brew 'direnv'
+brew 'chruby'
+brew 'ruby-brew'
+#brew 'heroku-toolbelt'
 
-#cask install xquartz
+#cask 'xquartz'
 
-cask install appcleaner
-cask install the-unarchiver
-#cask install cakebrew
+cask 'appcleaner'
+cask 'the-unarchiver'
+#cask 'cakebrew'
 
-#cask install boot2docker
-#cask install vagrant
+#cask 'boot2docker'
+#cask 'vagrant'
 
-cask install spectacle
-#cask install shiftit
-#cask install slate
+cask 'spectacle'
+#cask 'shiftit'
+#cask 'slate'
 
-#cask install osxfuse
-#cask install sshfs
+#cask 'osxfuse'
+#cask 'sshfs'
 
-#cask install gitx-rowanj
-#cask install hipchat
-cask install karabiner
-cask install vlc
-#cask install spotify
-#cask install cocoarestclient
-cask install easysimbl
-#cask install flux
-cask install firefox
-cask install google-chrome
-#cask install node-webkit
-#cask install multibit
-#cask install bittorrent-sync
-cask install imageoptim
-#cask install lightpaper
-#cask install inboaard
-#cask install nitrous-desktop
-#cask install ibettercharge
-#cask install hype
-cask install skype
-#cask install postgres
-cask install sequel-pro
-#cask intalll psequel
-#cask install robomongo
-#cask install rdm
-#cask install selfcontrol
-#cask install rescuetime
-cask install colorpicker-skalacolor
-cask install colorpicker-developer
-#cask install simpholders
-#cask install sketch-toolbox
-cask install flowdock
-#cask install recordit
-#cask install licecap
+#cask 'gitx-rowanj'
+#cask 'hipchat'
+cask 'karabiner'
+cask 'vlc'
+#cask 'spotify'
+#cask 'cocoarestclient'
+cask 'easysimbl'
+#cask 'flux'
+cask 'firefox'
+cask 'google-chrome'
+#cask 'node-webkit'
+#cask 'multibit'
+#cask 'bittorrent-sync'
+cask 'imageoptim'
+#cask 'lightpaper'
+#cask 'inboaard'
+#cask 'nitrous-desktop'
+#cask 'ibettercharge'
+#cask 'hype'
+cask 'skype'
+#cask 'postgres'
+cask 'sequel-pro'
+#cask 'intalll psequel'
+#cask 'robomongo'
+#cask 'rdm'
+#cask 'selfcontrol'
+#cask 'rescuetime'
+cask 'colorpicker-skalacolor'
+cask 'colorpicker-developer'
+#cask 'simpholders'
+#cask 'sketch-toolbox'
+cask 'flowdock'
+#cask 'recordit'
+#cask 'licecap'
 
-cask install deploymate
-cask install spark-inspector
-#cask install taskmate
+cask 'deploymate'
+cask 'spark-inspector'
+#cask 'taskmate'
 
-install node
-install redis
-install mysql
-install memcached
-install mongodb
-install postgresql
+brew 'node'
+brew 'redis'
+brew 'mysql'
+brew 'memcached'
+brew 'mongodb'
+brew 'postgresql'
 
-install phantomjs
+brew 'phantomjs'
 
-#install logstalgia
-#install pkgconfig
-install imagemagick
+#brew 'logstalgia'
+#brew 'pkgconfig'
+brew 'imagemagick'
 
-#install dnsmasq
-#install rinetd
-#install ec2-ami-tools
-#install ec2-api-tools
-#install elb-tools
+#brew 'dnsmasq'
+#brew 'rinetd'
+#brew 'ec2-ami-tools'
+#brew 'ec2-api-tools'
+#brew 'elb-tools'
 
