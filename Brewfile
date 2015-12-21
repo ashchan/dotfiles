@@ -30,6 +30,7 @@ brew 'direnv'
 brew 'chruby'
 brew 'ruby-install'
 #brew 'heroku-toolbelt'
+brew 'carthage'
 
 #cask 'xquartz'
 
