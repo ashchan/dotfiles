@@ -80,7 +80,7 @@ cask 'colorpicker-developer'
 #cask 'simpholders'
 #cask 'sketch-toolbox'
 cask 'flowdock'
-#cask 'recordit'
+cask 'recordit'
 #cask 'licecap'
 
 cask 'deploymate'
