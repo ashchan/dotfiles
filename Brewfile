@@ -96,7 +96,7 @@ brew 'postgresql'
 brew 'phantomjs'
 
 #brew 'logstalgia'
-#brew 'pkgconfig'
+brew 'pkg-config'
 brew 'imagemagick'
 
 #brew 'dnsmasq'
