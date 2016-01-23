@@ -1,6 +1,8 @@
 .DS_Store
 *.swp
 *.sw?
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
 .ec2
 bin/*
 vendor/ruby/*
