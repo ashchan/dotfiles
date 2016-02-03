@@ -140,6 +140,8 @@ set modelines=10
 " Show (partial) command in the status line
 set showcmd
 
+set dir=~/.vim/_swap//
+
 set nobackup
 " Directories for swp files
 " set backupdir=~/.vim/backup
