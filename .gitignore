@@ -5,6 +5,7 @@
 [._]s[a-w][a-z]
 .ec2
 bin/*
+.bundle/
 vendor/ruby/*
 vendor/postgresql
 vendor/redis
