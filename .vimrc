@@ -60,18 +60,18 @@ call vundle#begin()
   Plugin 'mattn/emmet-vim'
   Plugin 'kchmck/vim-coffee-script'
   Plugin 'pangloss/vim-javascript'
-  Plugin 'elzr/vim-json'
+  "Plugin 'elzr/vim-json'
   Plugin 'maksimr/vim-jsbeautify'
   Plugin 'plasticboy/vim-markdown'
-  Plugin 'slim-template/vim-slim.git'
+  "Plugin 'slim-template/vim-slim.git'
   Plugin 'nikvdp/ejs-syntax'
 
   Plugin 'ap/vim-css-color'
   Plugin 'cakebaker/scss-syntax.vim'
 
-  Plugin 'fatih/vim-go'
+  "Plugin 'fatih/vim-go'
 
-  Plugin 'ekalinin/Dockerfile.vim'
+  "Plugin 'ekalinin/Dockerfile.vim'
 
   Plugin 'altercation/vim-colors-solarized'
 
