@@ -1,8 +1,10 @@
 alias fs="foreman start -f Procfile.local"
 alias hfs="heroku local:start -f Procfile.local"
+alias redis.server="redis-server /usr/local/etc/redis.conf"
+alias xcode="/Applications/Xcode.app/Contents/MacOS/Xcode"
+alias docker="docker --tlsverify=false"
+
 function kp {
   sudo kill -15 `ps -ef | grep $1 | grep -v grep | awk '{print $2}'`;
 }
 
-alias fix_ios_simulator="launchctl list|grep UIKitApplication|awk '{print $3}'|xargs launchctl remove"
-alias swift="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift"
