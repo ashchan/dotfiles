@@ -63,7 +63,7 @@ call vundle#begin()
   "Plugin 'elzr/vim-json'
   Plugin 'maksimr/vim-jsbeautify'
   Plugin 'plasticboy/vim-markdown'
-  "Plugin 'slim-template/vim-slim.git'
+  Plugin 'slim-template/vim-slim.git'
   Plugin 'nikvdp/ejs-syntax'
 
   Plugin 'ap/vim-css-color'
