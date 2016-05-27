@@ -74,6 +74,7 @@ call vundle#begin()
   "Plugin 'ekalinin/Dockerfile.vim'
 
   Plugin 'altercation/vim-colors-solarized'
+  Plugin 'dracula/vim'
 
 call vundle#end()
 
@@ -203,5 +204,7 @@ let g:user_emmet_settings = { 'indentation' : '  ' }
 " plasticboy/vim-markdown
 let g:vim_markdown_folding_disabled=1
 
-color solarized
+" color solarized
+color dracula
 
+hi Visual ctermfg=NONE ctermbg=91 cterm=NONE guifg=NONE guibg=#8700af gui=NONE
