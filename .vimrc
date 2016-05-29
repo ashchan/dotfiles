@@ -207,4 +207,3 @@ let g:vim_markdown_folding_disabled=1
 " color solarized
 color dracula
 
-hi Visual ctermfg=NONE ctermbg=241 cterm=NONE guifg=NONE guibg=#8700af gui=NONE
