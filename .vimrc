@@ -152,6 +152,8 @@ set nobackup
 set t_Co=256
 set background=dark
 
+set colorcolumn=120
+
 " Use blowfish for encryption
 set cm=blowfish
 
