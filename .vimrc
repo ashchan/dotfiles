@@ -152,8 +152,6 @@ set nobackup
 set t_Co=256
 set background=dark
 
-set colorcolumn=120
-
 " Use blowfish for encryption
 set cm=blowfish
 
@@ -209,3 +207,4 @@ let g:vim_markdown_folding_disabled=1
 " color solarized
 color dracula
 
+hi NonText ctermfg=231 ctermbg=NONE cterm=NONE guifg=#525563 guibg=#282a36 gui=NONE
