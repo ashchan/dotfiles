@@ -56,6 +56,7 @@ call vundle#begin()
   Plugin 'rizzatti/dash.vim'
 
   Plugin 'tpope/vim-rails.git'
+  Plugin 'elixir-lang/vim-elixir'
   Plugin 'AndrewRadev/splitjoin.vim'
   Plugin 'mattn/emmet-vim'
   Plugin 'kchmck/vim-coffee-script'
