@@ -13,6 +13,7 @@ brew 's3cmd'
 brew 'git'
 brew 'vim', args: ['--override-system-vi']
 brew 'ack'
+brew 'ripgrep'
 brew 'the_silver_searcher'
 #brew 'pt'
 brew 'tmux'
