@@ -34,50 +34,47 @@ let mapleader = ","
 
 filetype off
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin('~/.vim/plugged')
 
-  Plugin 'gmarik/Vundle.vim'
+  Plug 'mileszs/ack.vim'
+  Plug 'kien/ctrlp.vim'
+  Plug 'jgdavey/vim-turbux'
+  Plug 'tpope/vim-dispatch'
+  Plug 'tpope/vim-fugitive'
+  Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
+  Plug 'scrooloose/nerdcommenter'
+  Plug 'junegunn/vim-easy-align'
+  Plug 'bronson/vim-trailing-whitespace'
+  Plug 'tpope/vim-surround'
+  Plug 'tpope/vim-repeat'
+  Plug 'terryma/vim-multiple-cursors'
+  Plug 'terryma/vim-expand-region'
+  Plug 'mikewest/vimroom'
+  Plug 'rizzatti/dash.vim'
 
-  Plugin 'mileszs/ack.vim'
-  Plugin 'kien/ctrlp.vim'
-  Plugin 'jgdavey/vim-turbux'
-  Plugin 'tpope/vim-dispatch'
-  Plugin 'tpope/vim-fugitive'
-  Plugin 'Valloric/YouCompleteMe'
-  Plugin 'scrooloose/nerdcommenter'
-  Plugin 'junegunn/vim-easy-align'
-  Plugin 'bronson/vim-trailing-whitespace'
-  Plugin 'tpope/vim-surround'
-  Plugin 'tpope/vim-repeat'
-  Plugin 'terryma/vim-multiple-cursors'
-  Plugin 'terryma/vim-expand-region'
-  Plugin 'mikewest/vimroom'
-  Plugin 'rizzatti/dash.vim'
+  Plug 'tpope/vim-rails'
+  Plug 'elixir-lang/vim-elixir'
+  Plug 'AndrewRadev/splitjoin.vim'
+  Plug 'mattn/emmet-vim'
+  Plug 'kchmck/vim-coffee-script'
+  Plug 'pangloss/vim-javascript'
+  "Plug 'elzr/vim-json'
+  Plug 'maksimr/vim-jsbeautify'
+  Plug 'plasticboy/vim-markdown'
+  Plug 'slim-template/vim-slim'
+  Plug 'nikvdp/ejs-syntax'
 
-  Plugin 'tpope/vim-rails.git'
-  Plugin 'elixir-lang/vim-elixir'
-  Plugin 'AndrewRadev/splitjoin.vim'
-  Plugin 'mattn/emmet-vim'
-  Plugin 'kchmck/vim-coffee-script'
-  Plugin 'pangloss/vim-javascript'
-  "Plugin 'elzr/vim-json'
-  Plugin 'maksimr/vim-jsbeautify'
-  Plugin 'plasticboy/vim-markdown'
-  Plugin 'slim-template/vim-slim.git'
-  Plugin 'nikvdp/ejs-syntax'
+  Plug 'ap/vim-css-color'
+  Plug 'cakebaker/scss-syntax.vim'
 
-  Plugin 'ap/vim-css-color'
-  Plugin 'cakebaker/scss-syntax.vim'
+  "Plug 'fatih/vim-go'
 
-  "Plugin 'fatih/vim-go'
+  "Plug 'ekalinin/Dockerfile.vim'
 
-  "Plugin 'ekalinin/Dockerfile.vim'
+  Plug 'altercation/vim-colors-solarized'
+  Plug 'dracula/vim'
 
-  Plugin 'altercation/vim-colors-solarized'
-  Plugin 'dracula/vim'
-
-call vundle#end()
+call plug#end()
 
 filetype on
 filetype plugin indent on
