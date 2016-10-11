@@ -39,7 +39,7 @@ call vundle#begin()
 
   Plugin 'gmarik/Vundle.vim'
 
-  Plugin 'rking/ag.vim'
+  Plugin 'mileszs/ack.vim'
   Plugin 'kien/ctrlp.vim'
   Plugin 'jgdavey/vim-turbux'
   Plugin 'tpope/vim-dispatch'
@@ -156,25 +156,27 @@ set background=dark
 " Use blowfish for encryption
 set cm=blowfish
 
-" rking/ag.vim
-nnoremap <silent> <Leader>f :Ag<space>
-set grepprg=ag\ --vimgrep\ --nogroup\ --nocolor
-
 if executable('ag')
-  let g:ag_prg = 'ag --vimgrep --smart-case --nogroup --nocolor --column'
-  let g:ag_highlight = 1
+  let g:ackprg = 'ag --vimgrep'
+  let g:ackhighlight = 1
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+  let g:ctrlp_use_caching = 0
 endif
 
+if executable('rg')
+  set grepprg=rg\ --vimgrep\ --no-heading
+  set grepformat=%f:%l:%c:%m,%f:%l:%m
+  let g:ctrlp_user_command = 'rg %s --files -g ""'
+  let g:ctrlp_use_caching = 0
+endif
+
+let g:ackprg = 'rg --vimgrep --no-heading --column'
 nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
+nnoremap <silent> <Leader>f :Ack<space>
 
 " kien/ctrlp.vim
 let g:ctrlp_working_path_mode = 2
 let g:ctrlp_dotfiles = 0
-
-if executable('ag')
-  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-  let g:ctrlp_use_caching = 0
-endif
 
 " netrw
 map <Leader>n :Explore<CR>
