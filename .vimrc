@@ -61,7 +61,7 @@ call plug#begin('~/.vim/plugged')
   "Plug 'elzr/vim-json'
   Plug 'maksimr/vim-jsbeautify'
   Plug 'plasticboy/vim-markdown'
-  Plug 'slim-template/vim-slim'
+  Plug 'slim-template/vim-slim', { 'for': 'slim' }
   Plug 'nikvdp/ejs-syntax'
 
   Plug 'ap/vim-css-color'
