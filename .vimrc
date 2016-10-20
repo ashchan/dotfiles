@@ -62,7 +62,6 @@ call plug#begin('~/.vim/plugged')
   Plug 'maksimr/vim-jsbeautify'
   Plug 'plasticboy/vim-markdown'
   Plug 'slim-template/vim-slim', { 'for': 'slim' }
-  Plug 'nikvdp/ejs-syntax'
 
   Plug 'ap/vim-css-color'
   Plug 'cakebaker/scss-syntax.vim'
