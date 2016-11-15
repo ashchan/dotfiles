@@ -32,6 +32,8 @@ brew 'chruby'
 brew 'ruby-install'
 brew 'carthage'
 
+brew 'swiftlint'
+
 #cask 'xquartz'
 
 cask 'appcleaner'
