@@ -1,10 +1,14 @@
 alias fs="foreman start -f Procfile.local"
 alias hfs="heroku local:start -f Procfile.local"
+alias tmux="direnv exec / tmux"
 alias redis.server="redis-server /usr/local/etc/redis.conf"
 alias xcode="/Applications/Xcode.app/Contents/MacOS/Xcode"
-alias docker="docker --tlsverify=false"
 
 function kp {
   sudo kill -15 `ps -ef | grep $1 | grep -v grep | awk '{print $2}'`;
+}
+
+function profile-swift {
+  xcodebuild -workspace $1.xcworkspace -scheme $2 clean build OTHER_SWIFT_FLAGS="-Xfrontend -debug-time-function-bodies" | grep .[0-9]ms | grep -v ^0.[0-9]ms | sort -nr > $3
 }
 
