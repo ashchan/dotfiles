@@ -61,7 +61,7 @@ call plug#begin('~/.vim/plugged')
   "Plug 'elzr/vim-json'
   Plug 'maksimr/vim-jsbeautify'
   Plug 'plasticboy/vim-markdown'
-  Plug 'slim-template/vim-slim', { 'for': 'slim' }
+  "Plug 'slim-template/vim-slim', { 'for': 'slim' }
 
   Plug 'ap/vim-css-color'
   Plug 'cakebaker/scss-syntax.vim'
@@ -69,9 +69,6 @@ call plug#begin('~/.vim/plugged')
   "Plug 'fatih/vim-go'
 
   "Plug 'ekalinin/Dockerfile.vim'
-
-  Plug 'altercation/vim-colors-solarized'
-  Plug 'dracula/vim'
 
 call plug#end()
 
@@ -125,6 +122,7 @@ au BufRead,BufNewFile *.less set ft=less
 au BufRead,BufNewFile *.jade set ft=jade
 au BufRead,BufNewFile *.slim set ft=slim
 au BufRead,BufNewFile,BufReadPost *.go set ft=go
+au FileType crontab setlocal nobackup nowritebackup
 au FileType go set noexpandtab tabstop=4 softtabstop=4 shiftwidth=4
 au FileType objc set tabstop=4 softtabstop=4 shiftwidth=4
 autocmd Filetype gitcommit setlocal spell textwidth=72
@@ -203,6 +201,4 @@ let g:user_emmet_settings = { 'indentation' : '  ' }
 " plasticboy/vim-markdown
 let g:vim_markdown_folding_disabled=1
 
-" color solarized
-color dracula
-
+color slate
