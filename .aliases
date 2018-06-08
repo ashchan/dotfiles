@@ -1,8 +1,10 @@
-alias fs="foreman start -f Procfile.local"
 alias hfs="heroku local:start -f Procfile.local"
-alias tmux="direnv exec / tmux"
-alias redis.server="redis-server /usr/local/etc/redis.conf"
-alias xcode="/Applications/Xcode.app/Contents/MacOS/Xcode"
+#alias tmux="direnv exec / tmux"
+alias pg.start="pg_ctl -D /usr/local/var/postgres start"
+alias pg.stop="pg_ctl -D /usr/local/var/postgres stop"
+alias kovan="parity --chain kovan --rpcapi all"
+alias parityall="parity --jsonrpc-apis all"
+alias bitcoin="curl rate.sx"
 
 function kp {
   sudo kill -15 `ps -ef | grep $1 | grep -v grep | awk '{print $2}'`;
@@ -10,5 +12,13 @@ function kp {
 
 function profile-swift {
   xcodebuild -workspace $1.xcworkspace -scheme $2 clean build OTHER_SWIFT_FLAGS="-Xfrontend -debug-time-function-bodies" | grep .[0-9]ms | grep -v ^0.[0-9]ms | sort -nr > $3
+}
+
+function weather {
+  curl wttr.in/"$1"
+}
+
+function logbook() {
+  code ~/Dropbox/Logbook/$(date '+%Y-%m-%d').md
 }
 
