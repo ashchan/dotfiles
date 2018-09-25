@@ -11,7 +11,7 @@ brew 'httpie'
 brew 'mackup'
 brew 's3cmd'
 brew 'git'
-brew 'vim', args: ['--override-system-vi']
+brew 'vim', args: ['--with-override-system-vi']
 brew 'ack'
 brew 'ripgrep'
 brew 'the_silver_searcher'
