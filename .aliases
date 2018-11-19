@@ -15,6 +15,10 @@ function mapalt {
   hidutil property --set '{"UserKeyMapping": [{"HIDKeyboardModifierMappingSrc":0x7000000e6, "HIDKeyboardModifierMappingDst":0x7000000e4}] }'
 }
 
+function recordsimulator {
+  xcrun simctl io booted recordVideo ~/Downloads/"$1"
+}
+
 function weather {
   curl wttr.in/"$1"
 }
