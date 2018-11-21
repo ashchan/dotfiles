@@ -23,7 +23,7 @@ source /usr/local/opt/chruby/share/chruby/auto.sh
 export GOPATH=$HOME/Projects/go
 export PATH="$PATH:$GOPATH/bin"
 
-export PATH="/usr/local/heroku/bin:$PATH"
+export PATH="/usr/local/opt/riscv/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
