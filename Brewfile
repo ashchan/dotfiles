@@ -32,6 +32,7 @@ brew 'carthage'
 
 brew 'swiftlint'
 
+cask 'gpg-suite'
 cask 'appcleaner'
 cask 'the-unarchiver'
 
