@@ -50,6 +50,7 @@ cask 'sequel-pro'
 cask 'colorpicker-skalacolor'
 cask 'colorpicker-developer'
 cask 'licecap'
+cask 'simsim'
 
 #brew 'redis'
 #brew 'mysql'
