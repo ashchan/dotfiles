@@ -51,6 +51,7 @@ cask 'colorpicker-skalacolor'
 cask 'colorpicker-developer'
 cask 'licecap'
 cask 'simsim'
+cask 'flotato'
 
 #brew 'redis'
 #brew 'mysql'
