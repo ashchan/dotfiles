@@ -26,6 +26,7 @@ brew 'ffmpeg'
 brew 'go'
 
 brew 'direnv'
+brew 'asdf'
 brew 'chruby'
 brew 'ruby-install'
 brew 'carthage'
