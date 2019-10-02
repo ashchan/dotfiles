@@ -41,7 +41,6 @@ call plug#begin('~/.vim/plugged')
   Plug 'jgdavey/vim-turbux'
   Plug 'tpope/vim-dispatch'
   Plug 'tpope/vim-fugitive'
-  Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
   Plug 'scrooloose/nerdcommenter'
   Plug 'junegunn/vim-easy-align'
   Plug 'bronson/vim-trailing-whitespace'
