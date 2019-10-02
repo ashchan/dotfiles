@@ -6,6 +6,7 @@ alias kovan="parity --chain kovan --rpcapi all"
 alias parityall="parity --jsonrpc-apis all --tx-queue-size 64000"
 alias light.trinity="trinity --light --data-dir /Volumes/Moon/Chains/trinity"
 alias bitcoin="curl rate.sx"
+alias ccc="conventional-changelog -p angular -i CHANGELOG.md -s"
 
 function kp {
   sudo kill -15 `ps -ef | grep $1 | grep -v grep | awk '{print $2}'`;
