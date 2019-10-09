@@ -16,4 +16,5 @@ Procfile.local
 .foreman
 .vagrant
 .ruby-version
+.tool-versions
 tags
