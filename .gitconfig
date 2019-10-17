@@ -1,6 +1,6 @@
 [user]
-  name = James Chen
-  email = ashchan@gmail.com
+	name = James Chen
+	email = james@ashchan.com
 [color]
   diff = auto
   status = auto
@@ -21,7 +21,7 @@
 [push]
   default = simple
 [core]
-  excludesfile = ~/.gitignore
+	excludesfile = /Users/james/.gitignore
   editor = vim
 [github]
   user = ashchan
@@ -31,3 +31,9 @@
 	smudge = git media smudge %f
 [diff]
 	compactionHeuristic = true
+	noprefix = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
