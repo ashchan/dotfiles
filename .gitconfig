@@ -1,6 +1,7 @@
 [user]
 	name = James Chen
 	email = james@ashchan.com
+	signingkey = F29419D6D986FC07
 [color]
   diff = auto
   status = auto
