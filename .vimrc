@@ -139,6 +139,7 @@ set showcmd
 set dir=~/.vim/_swap//
 
 set nobackup
+set noswapfile
 " Directories for swp files
 " set backupdir=~/.vim/backup
 " set directory=~/.vim/backup
