@@ -1,5 +1,6 @@
 autoload -Uz colors ; colors
 export EDITOR=vim
+export LC_ALL=en_US.UTF-8
 set -o vi
 
 source ~/.zsh/zsh-git-prompt/zshrc.sh # https://github.com/olivierverdier/zsh-git-prompt
