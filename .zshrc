@@ -12,7 +12,6 @@ eval "$(direnv hook $SHELL)"
 autoload -Uz compinit && compinit
 
 . /usr/local/opt/asdf/asdf.sh
-. /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
 
 if [ -s ~/.aliases ] ; then source ~/.aliases ; fi
 if [ -s ~/.exports ] ; then source ~/.exports ; fi
