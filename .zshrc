@@ -14,8 +14,6 @@ autoload -Uz compinit && compinit
 if [ -s ~/.aliases ] ; then source ~/.aliases ; fi
 if [ -s ~/.exports ] ; then source ~/.exports ; fi
 
-export GOPATH=$HOME/Projects/go
-export PATH="$GOPATH/bin:$PATH"
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH="$HOME/Projects/flutter/bin:$HOME/Projects/flutter/bin/cache/dart-sdk/bin:$PATH"
 
