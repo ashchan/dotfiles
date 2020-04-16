@@ -20,6 +20,8 @@ export GOPATH=$HOME/Projects/go
 export PATH="$PATH:$GOPATH/bin"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="$HOME/Projects/flutter/bin:$PATH"
+export PATH="$HOME/Projects/flutter/bin/cache/dart-sdk/bin:$PATH"
 
 function chpwd {
   printf '\e]7;%s\a' "file://$HOSTNAME${PWD// /%20}"
