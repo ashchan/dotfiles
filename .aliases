@@ -2,11 +2,6 @@ alias hfs="heroku local:start -f Procfile.local"
 #alias tmux="direnv exec / tmux"
 alias pg.start="pg_ctl -D /usr/local/var/postgres start"
 alias pg.stop="pg_ctl -D /usr/local/var/postgres stop"
-alias kovan="parity --chain kovan --rpcapi all"
-alias parityall="parity --jsonrpc-apis all --tx-queue-size 64000"
-alias light.trinity="trinity --light --data-dir /Volumes/Moon/Chains/trinity"
-alias bitcoin="curl rate.sx"
-alias ccc="conventional-changelog -p angular -i CHANGELOG.md -s"
 
 function kp {
   sudo kill -15 `ps -ef | grep $1 | grep -v grep | awk '{print $2}'`;
@@ -24,7 +19,7 @@ function weather {
   curl wttr.in/"$1"
 }
 
-function logbook() {
-  code ~/Dropbox/Logbook/$(date '+%Y-%m-%d').md
+function source_emsdk {
+  source ~/Projects/emsdk/emsdk_env.sh
 }
 
