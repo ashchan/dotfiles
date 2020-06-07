@@ -52,23 +52,14 @@ call plug#begin('~/.vim/plugged')
   Plug 'rizzatti/dash.vim'
 
   Plug 'tpope/vim-rails'
-  Plug 'elixir-lang/vim-elixir'
   Plug 'AndrewRadev/splitjoin.vim'
   Plug 'mattn/emmet-vim'
-  Plug 'kchmck/vim-coffee-script'
   Plug 'pangloss/vim-javascript'
-  "Plug 'elzr/vim-json'
   Plug 'maksimr/vim-jsbeautify'
   Plug 'plasticboy/vim-markdown'
-  "Plug 'slim-template/vim-slim', { 'for': 'slim' }
 
   Plug 'ap/vim-css-color'
   Plug 'cakebaker/scss-syntax.vim'
-
-  "Plug 'fatih/vim-go'
-
-  "Plug 'ekalinin/Dockerfile.vim'
-
 call plug#end()
 
 filetype on
@@ -147,9 +138,6 @@ set noswapfile
 set t_Co=256
 set background=dark
 
-" Use blowfish for encryption
-set cm=blowfish
-
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
   let g:ackhighlight = 1
@@ -187,11 +175,6 @@ let g:turbux_command_prefix = 'bundle exec'
 
 " ap/vim-css-color
 let g:cssColorVimDoNotMessMyUpdatetime = 1
-
-" Valloric/YouCompleteMe
-let g:ycm_collect_identifiers_from_tags_files = 1
-let g:ycm_seed_identifiers_with_syntax = 1
-let g:ycm_server_python_interpreter='/usr/local/bin/python3'
 
 " rizzatti/dash.vim
 :nmap <silent> Q <Plug>DashSearch
