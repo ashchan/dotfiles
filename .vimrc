@@ -35,7 +35,6 @@ let mapleader = ","
 filetype off
 
 call plug#begin('~/.vim/plugged')
-
   Plug 'mileszs/ack.vim'
   Plug 'kien/ctrlp.vim'
   Plug 'jgdavey/vim-turbux'
@@ -46,18 +45,10 @@ call plug#begin('~/.vim/plugged')
   Plug 'bronson/vim-trailing-whitespace'
   Plug 'tpope/vim-surround'
   Plug 'tpope/vim-repeat'
-  Plug 'terryma/vim-multiple-cursors'
-  Plug 'terryma/vim-expand-region'
-  Plug 'mikewest/vimroom'
   Plug 'rizzatti/dash.vim'
-
   Plug 'tpope/vim-rails'
-  Plug 'AndrewRadev/splitjoin.vim'
-  Plug 'mattn/emmet-vim'
   Plug 'pangloss/vim-javascript'
-  Plug 'maksimr/vim-jsbeautify'
   Plug 'plasticboy/vim-markdown'
-
   Plug 'ap/vim-css-color'
   Plug 'cakebaker/scss-syntax.vim'
 call plug#end()
