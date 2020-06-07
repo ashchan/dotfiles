@@ -95,13 +95,7 @@ au BufNewFile,BufRead *.{js} set ft=javascript
 au FileType javascript set tabstop=2 softtabstop=2 shiftwidth=2
 au BufRead,BufNewFile *.txt call s:setupWrapping()
 au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
-au BufRead,BufNewFile *.rabl set ft=ruby
-au BufRead,BufNewFile {Cakefile} set ft=coffee
-au BufRead,BufNewFile *.coffee set ft=coffee
 au BufRead,BufNewFile *.scss set ft=scss
-au BufRead,BufNewFile *.less set ft=less
-au BufRead,BufNewFile *.jade set ft=jade
-au BufRead,BufNewFile *.slim set ft=slim
 au BufRead,BufNewFile,BufReadPost *.go set ft=go
 au FileType crontab setlocal nobackup nowritebackup
 au FileType go set noexpandtab tabstop=4 softtabstop=4 shiftwidth=4
@@ -154,9 +148,7 @@ let g:ctrlp_dotfiles = 0
 " netrw
 map <Leader>n :Explore<CR>
 let g:netrw_list_hide= '.*\.swp$,\.DS_Store,\.git/,log/\.sass-cache/,^tags$,\.bundle/'
-
-" junegunn/vim-easy-align
-vnoremap <silent> <Enter> :EasyAlign<cr>
+let g:netrw_liststyle=1
 
 " OpenURL for rails.vim
 :command -bar -nargs=1 OpenURL :!open <args>
@@ -169,9 +161,6 @@ let g:cssColorVimDoNotMessMyUpdatetime = 1
 
 " rizzatti/dash.vim
 :nmap <silent> Q <Plug>DashSearch
-
-" mattn/emmet-vim
-let g:user_emmet_settings = { 'indentation' : '  ' }
 
 " plasticboy/vim-markdown
 let g:vim_markdown_folding_disabled=1
