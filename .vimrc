@@ -75,12 +75,6 @@ map <C-\> :tnext<CR>
 " Marked
 :map <leader>m :!open -a "Marked 2.app" '%:p'<CR><CR>
 
-" Remember last location in file
-if has("autocmd")
-  au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
-    \| exe "normal g'\"" | endif
-endif
-
 function s:setupWrapping()
   set wrap
   set wrapmargin=2
