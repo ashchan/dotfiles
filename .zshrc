@@ -3,6 +3,9 @@ export EDITOR=vim
 export LC_ALL=en_US.UTF-8
 set -o vi
 
+bindkey -v
+bindkey '^R' history-incremental-search-backward
+
 source ~/.zsh/zsh-git-prompt/zshrc.sh # https://github.com/olivierverdier/zsh-git-prompt
 PROMPT='%F{red}%B%m %F{cyan}%~%b$(git_super_status) \$ '
 
