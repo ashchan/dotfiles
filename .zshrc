@@ -19,6 +19,7 @@ if [ -s ~/.exports ] ; then source ~/.exports ; fi
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH="$HOME/Projects/flutter/bin:$HOME/Projects/flutter/bin/cache/dart-sdk/bin:$PATH"
+export PATH="$PATH:$HOME/.dotnet/tools"
 
 . /usr/local/opt/asdf/asdf.sh
 
