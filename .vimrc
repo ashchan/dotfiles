@@ -140,9 +140,10 @@ let g:ctrlp_working_path_mode = 2
 let g:ctrlp_dotfiles = 0
 
 " netrw
-map <Leader>n :Explore<CR>
+map <Leader>n :Lexplore<CR>
 let g:netrw_list_hide= '.*\.swp$,\.DS_Store,\.git/,log/\.sass-cache/,^tags$,\.bundle/'
 let g:netrw_liststyle=1
+let g:netrw_winsize = 25
 
 " OpenURL for rails.vim
 :command -bar -nargs=1 OpenURL :!open <args>
