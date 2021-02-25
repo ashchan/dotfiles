@@ -14,9 +14,8 @@ autoload -Uz compinit && compinit
 if [ -s ~/.aliases ] ; then source ~/.aliases ; fi
 if [ -s ~/.exports ] ; then source ~/.exports ; fi
 
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-export PATH="$HOME/Projects/flutter/bin:$HOME/Projects/flutter/bin/cache/dart-sdk/bin:$PATH"
 export PATH="$PATH:$HOME/.dotnet/tools"
+export PATH="$PATH:$HOME/Library/Android/sdk/platform-tools"
 export PATH="/opt/homebrew/bin:$PATH"
 
 typeset -aU path
