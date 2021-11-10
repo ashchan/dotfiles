@@ -1,10 +1,7 @@
-alias hfs="heroku local:start -f Procfile.local"
-#alias tmux="direnv exec / tmux"
 alias pg.start="pg_ctl -D /usr/local/var/postgres start"
 alias pg.stop="pg_ctl -D /usr/local/var/postgres stop"
 alias vim=nvim
 alias vi=nvim
-alias signxcode='sudo codesign -f -s "Apple Development: Jianming Chen (B866K3RNN8)" /Applications/Xcode.app'
 
 function kp {
   sudo kill -15 `ps -ef | grep $1 | grep -v grep | awk '{print $2}'`;
@@ -16,9 +13,5 @@ function mapalt {
 
 function weather {
   curl wttr.in/"$1"
-}
-
-function source_emsdk {
-  source ~/Projects/emsdk/emsdk_env.sh
 }
 
