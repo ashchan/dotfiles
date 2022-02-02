@@ -6,7 +6,7 @@ set -o vi
 bindkey -v
 bindkey '^R' history-incremental-search-backward
 
-source ~/.zsh/zsh-git-prompt/zshrc.sh # https://github.com/olivierverdier/zsh-git-prompt
+source ~/.zsh/zsh-git-prompt/zshrc.sh # https://github.com/zsh-git-prompt/zsh-git-prompt.git
 PROMPT='%F{red}%B%m %F{cyan}%~%b$(git_super_status) \$ '
 
 autoload -Uz compinit && compinit
