@@ -51,6 +51,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'plasticboy/vim-markdown'
   Plug 'ap/vim-css-color'
   Plug 'cakebaker/scss-syntax.vim'
+  Plug 'dracula/vim'
 call plug#end()
 
 filetype on
@@ -160,4 +161,4 @@ let g:cssColorVimDoNotMessMyUpdatetime = 1
 " plasticboy/vim-markdown
 let g:vim_markdown_folding_disabled=1
 
-color slate
+color dracula

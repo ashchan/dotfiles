@@ -1,7 +1,6 @@
 [user]
 	name = Jianming Chen
 	email = james@ashchan.com
-	signingkey = F29419D6D986FC07
 [color]
   diff = auto
   status = auto
@@ -39,6 +38,6 @@
 	process = git-lfs filter-process
 	required = true
 [commit]
-	gpgsign = true
+	gpgsign = false
 [pull]
 	rebase = false
