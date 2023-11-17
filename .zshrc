@@ -25,3 +25,5 @@ function chpwd {
   printf '\e]7;%s\a' "file://$HOSTNAME${PWD// /%20}"
 }
 chpwd
+
+source <(pkgx --shellcode)  #docs.pkgx.sh/shellcode
