@@ -41,3 +41,5 @@
 	gpgsign = false
 [pull]
 	rebase = false
+[tag]
+	forcesignannotated = false
