@@ -1,14 +1,8 @@
-alias pg.start="pg_ctl -D /usr/local/var/postgres start"
-alias pg.stop="pg_ctl -D /usr/local/var/postgres stop"
 alias vim=nvim
 alias vi=nvim
 
 function kp {
   sudo kill -15 `ps -ef | grep $1 | grep -v grep | awk '{print $2}'`;
-}
-
-function mapalt {
-  hidutil property --set '{"UserKeyMapping": [{"HIDKeyboardModifierMappingSrc":0x7000000e6, "HIDKeyboardModifierMappingDst":0x7000000e4}] }'
 }
 
 function weather {
