@@ -21,7 +21,7 @@
 [push]
   default = simple
 [core]
-	excludesfile = /Users/james/.gitignore
+	excludesfile = ~/.gitignore
   editor = vim
 [github]
   user = ashchan
