@@ -1,6 +1,10 @@
 alias vim=nvim
 alias vi=nvim
 
+function hid {
+ vi ~/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/boards.txt
+}
+
 function kp {
   sudo kill -15 `ps -ef | grep $1 | grep -v grep | awk '{print $2}'`;
 }
