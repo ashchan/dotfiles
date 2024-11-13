@@ -16,7 +16,6 @@ if [ -s ~/.exports ] ; then source ~/.exports ; fi
 
 export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
 export PATH=/usr/local/bin:$PATH
-export PATH="/opt/homebrew/bin:$PATH"
 export PATH="$PATH:$GEM_HOME/bin"
 
 typeset -aU path
