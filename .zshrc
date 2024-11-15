@@ -14,9 +14,8 @@ autoload -Uz compinit && compinit
 if [ -s ~/.aliases ] ; then source ~/.aliases ; fi
 if [ -s ~/.exports ] ; then source ~/.exports ; fi
 
-export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
-export PATH=/usr/local/bin:$PATH
-export PATH="$PATH:$GEM_HOME/bin"
+export PATH="/opt/homebrew/opt/ruby/bin:/opt/homebrew/lib/ruby/gems/3.3.0/bin:$PATH"
+export PATH="/usr/local/bin:$PATH"
 
 typeset -aU path
 
@@ -24,5 +23,3 @@ function chpwd {
   printf '\e]7;%s\a' "file://$HOSTNAME${PWD// /%20}"
 }
 chpwd
-
-source <(pkgx --shellcode)  #docs.pkgx.sh/shellcode
