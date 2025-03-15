@@ -23,3 +23,10 @@ function chpwd {
   printf '\e]7;%s\a' "file://$HOSTNAME${PWD// /%20}"
 }
 chpwd
+
+# bun completions
+[ -s "/Users/akira/.bun/_bun" ] && source "/Users/akira/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
