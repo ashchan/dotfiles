@@ -16,9 +16,7 @@ if [ -s ~/.exports ] ; then source ~/.exports ; fi
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 export PATH="/usr/local/bin:$PATH"
-export GEM_HOME="$HOME/.gem"
 export PATH="$(brew --prefix)/opt/ruby/bin:$PATH"
-export PATH="$GEM_HOME/bin:$PATH"
 
 typeset -aU path
 
