@@ -14,7 +14,10 @@ autoload -Uz compinit && compinit
 if [ -s ~/.aliases ] ; then source ~/.aliases ; fi
 if [ -s ~/.exports ] ; then source ~/.exports ; fi
 
-export PATH="/opt/homebrew/opt/ruby/bin:/opt/homebrew/lib/ruby/gems/3.3.0/bin:$PATH"
+eval "$(/opt/homebrew/bin/brew shellenv)"
+export GEM_HOME="$HOME/.gem"
+export PATH="$(brew --prefix)/opt/ruby/bin:$PATH"
+export PATH="$GEM_HOME/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 
 typeset -aU path
