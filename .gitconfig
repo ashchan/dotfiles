@@ -20,6 +20,7 @@
   untracked = cyan
 [push]
   default = simple
+	autoSetupRemote = true
 [core]
 	excludesfile = ~/.gitignore
   editor = vim
