@@ -13,6 +13,7 @@ autoload -Uz compinit && compinit
 
 if [ -s ~/.aliases ] ; then source ~/.aliases ; fi
 if [ -s ~/.exports ] ; then source ~/.exports ; fi
+if [ -s ~/.private-exports ] ; then source ~/.private-exports ; fi
 
 export PATH="/usr/local/bin:$PATH"
 export PATH="$(brew --prefix)/opt/ruby/bin:$PATH"
