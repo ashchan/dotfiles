@@ -17,6 +17,7 @@ if [ -s ~/.private-exports ] ; then source ~/.private-exports ; fi
 
 export PATH="/usr/local/bin:$PATH"
 export PATH="$(brew --prefix)/opt/ruby/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 
 typeset -aU path
 
