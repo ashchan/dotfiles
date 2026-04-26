@@ -18,3 +18,4 @@ Procfile.local
 .ruby-version
 .tool-versions
 tags
+.claude/settings.local.json
