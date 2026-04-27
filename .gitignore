@@ -19,3 +19,4 @@ Procfile.local
 .tool-versions
 tags
 .claude/settings.local.json
+.claude/worktrees
