@@ -1,5 +1,5 @@
 autoload -Uz colors ; colors
-export EDITOR=vim
+export EDITOR=nvim
 export LC_ALL=en_US.UTF-8
 set -o vi
 
@@ -11,24 +11,22 @@ PROMPT='%F{red}%B%m %F{cyan}%~%b$(git_super_status) \$ '
 
 autoload -Uz compinit && compinit
 
-if [ -s ~/.aliases ] ; then source ~/.aliases ; fi
-if [ -s ~/.exports ] ; then source ~/.exports ; fi
-if [ -s ~/.private-exports ] ; then source ~/.private-exports ; fi
+if [ -s ~/.aliases ]; then source ~/.aliases; fi
+if [ -s ~/.exports ]; then source ~/.exports; fi
+if [ -s ~/.private-exports ]; then source ~/.private-exports; fi
 
-export PATH="/usr/local/bin:$PATH"
-export PATH="$(brew --prefix)/opt/ruby/bin:$PATH"
-export PATH="$HOME/.local/bin:$PATH"
-
-typeset -aU path
+if command -v brew >/dev/null 2>&1; then
+  path=("$(brew --prefix ruby)/bin" $path)
+fi
+path=("$HOME/.local/bin" $path)
 
 function chpwd {
   printf '\e]7;%s\a' "file://$HOSTNAME${PWD// /%20}"
 }
 chpwd
 
-# bun completions
-[ -s "/Users/akira/.bun/_bun" ] && source "/Users/akira/.bun/_bun"
-
-# bun
 export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
+path=("$BUN_INSTALL/bin" $path)
+[ -s "$BUN_INSTALL/_bun" ] && source "$BUN_INSTALL/_bun"
+
+typeset -aU path
