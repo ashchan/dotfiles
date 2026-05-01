@@ -20,3 +20,4 @@ Procfile.local
 tags
 .claude/settings.local.json
 .claude/worktrees
+.xcodebuildmcp
