@@ -5,6 +5,9 @@ fi
 autoload -Uz colors ; colors
 export EDITOR=nvim
 export LC_ALL=en_US.UTF-8
+export CLICOLOR=1
+export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
+export LESS='-R'
 set -o vi
 
 bindkey -v
