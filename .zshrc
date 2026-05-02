@@ -1,3 +1,7 @@
+if [ -x /opt/homebrew/bin/brew ]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
+
 autoload -Uz colors ; colors
 export EDITOR=nvim
 export LC_ALL=en_US.UTF-8
