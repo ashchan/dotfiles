@@ -29,3 +29,6 @@ path=("$BUN_INSTALL/bin" $path)
 typeset -aU path
 
 eval "$(starship init zsh)"
+
+ZSH_AUTOSUGGEST_STRATEGY=(completion)
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
